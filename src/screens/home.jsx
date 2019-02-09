@@ -17,6 +17,7 @@ class Home extends Component {
               <SlideshowImage />
             </div>
           </section>
+          <hr className="home-hr"/>
           <section>
             <EnergyEfficientDesign />
           </section>

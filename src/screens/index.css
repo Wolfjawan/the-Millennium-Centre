@@ -1,16 +1,5 @@
-/* .home {
-  display: block;
-} */
-.home-main-section {
-  /* background-color: #ee38df; */
-   /* background: linear-gradient(to right, #1bc40c 0, #7bff00 48%, #ee782a 100%);  */
-  /* background-image: linear-gradient(
-    to right,
-    rgb(252, 0, 210) 0px,
-    rgb(221, 128, 14) 48%,
-    rgb(238, 196, 42) 100%
-  ); */
 
+.home-main-section {
   display: flex;
   flex-wrap: wrap;
 }
@@ -18,7 +7,11 @@
   width: 49.5%;
   margin: 0.5% 0.5% 0 0;
 }
-
+.home-hr {
+ width: 80%;
+ height: 4px;
+ background: linear-gradient(to right, #7000cc 0, #ff009d 48%, #ee822a 100%);
+}
 @media screen and (max-width: 1000px) {
   .home-main-section-item {
     width: 98%;
