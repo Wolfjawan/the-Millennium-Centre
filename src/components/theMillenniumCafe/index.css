@@ -1,7 +1,4 @@
-.millennium-cafe-s1{
-    /* hi */
-}
-.millennium-cafe-s1-image{
+    .millennium-cafe-s1-image{
     width: 100%;
 }
 .millennium-cafe-s1-text{
@@ -41,6 +38,6 @@
         padding:1%;
       }
       .millennium-cafe-s1-image{
-        /* height: 200px; */
+        height: 200px;
     }
   }
