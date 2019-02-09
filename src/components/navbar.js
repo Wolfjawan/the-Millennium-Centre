@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import MillenniumCentre from "../images/MillenniumCentre.PNG";
+import MillenniumCentre from "../images/Logo.png";
 import './index.css'
 class navbar extends Component {
   render() {
@@ -15,7 +15,7 @@ class navbar extends Component {
           height="150px"
         />
         <button
-          className="navbar-toggler btn btn-outline-success nav-btn m-1"
+          className="navbar-toggler btn btn-outline-success nav-btn mr-4"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"

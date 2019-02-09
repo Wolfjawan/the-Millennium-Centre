@@ -3,8 +3,7 @@ import React, { Component } from "react";
 class HomeMainText extends Component {
   render() {
     return (
-      <div className="pl-5">
-        <h1 className="welcome">Welcome to the Millennium Centre</h1>
+      <div className="home-main-text">
         <div>
           <p>
             The Millennium Centre is a visitor centre which is open to the
@@ -12,11 +11,11 @@ class HomeMainText extends Component {
             of ecological principles as well as housing educational displays in
             its public spaces. <br /> It includes:
           </p>
-          <ol>
-            <li>an introduction to the history of the site</li>
-            <li>information on the design and construction of the building</li>
-            <li>environmentally themed educational displays</li>
-          </ol>
+          <ul>
+            <li>An introduction to the history of the site</li>
+            <li>Information on the design and construction of the building</li>
+            <li>Environmentally themed educational displays</li>
+          </ul>
           <p>
             The building forms a natural gateway into the wide-open spaces of
             Eastbrookend Country Park and the Dagenham Chase Local Nature

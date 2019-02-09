@@ -1,4 +1,3 @@
-
 .home-main-section {
   display: flex;
   flex-wrap: wrap;
@@ -8,13 +7,19 @@
   margin: 0.5% 0.5% 0 0;
 }
 .home-hr {
- width: 80%;
- height: 4px;
- background: linear-gradient(to right, #7000cc 0, #ff009d 48%, #ee822a 100%);
+  width: 80%;
+  height: 4px;
+  background: linear-gradient(to right, #7000cc 0, #ff009d 48%, #ee822a 100%);
+}
+.welcome {
+  padding-left: 1.5rem;
 }
 @media screen and (max-width: 1000px) {
   .home-main-section-item {
     width: 98%;
     margin: 1% 1% 0% 1%;
+  }
+  .welcome {
+    font-size: 24px;
   }
 }

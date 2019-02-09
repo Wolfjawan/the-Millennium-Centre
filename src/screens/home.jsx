@@ -9,6 +9,7 @@ class Home extends Component {
     return (
       <div className="home">
         <div>
+          <h1 className="welcome">Welcome to The Millennium Centre</h1>
           <section className="home-main-section">
             <div className="home-main-section-item">
               <HomeMainText />
@@ -17,7 +18,7 @@ class Home extends Component {
               <SlideshowImage />
             </div>
           </section>
-          <hr className="home-hr"/>
+          <hr className="home-hr" />
           <section>
             <EnergyEfficientDesign />
           </section>
