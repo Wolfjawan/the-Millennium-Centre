@@ -1,0 +1,50 @@
+.slideshow-image-box {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+.slideshow-image-image {
+  display: block;
+  width: 100%;
+  border: 4px solid #08eea1;
+  border-radius: 10px;
+}
+.slideshow-image {
+  margin-bottom: 3%;
+}
+.slideshow-image-text {
+  position: absolute;
+  bottom: 0%;
+  padding: 0% 1%;
+  font-weight: bold;
+  color: #0bff00;
+}
+.slideshow-image-text:hover {
+  color: #0099ff;
+  background-color: #2bff00;
+  border: 2px solid #0099ff;
+  border-radius: 4%;
+}
+.slick-dots,
+.slick-next,
+.slick-prev {
+  position: static !important;
+}
+.energy-efficient-design {
+  padding: 0 10%;
+  width: 80%;
+}
+.millennium-Centre-exterior-view-image {
+  width: 100%;
+  border: 2px solid #2bff00;
+  border-radius: 10px;
+  margin-bottom: 2%
+}
+@media screen and (max-width: 1000px) {
+  .welcome {
+    font-size: 24px;
+  }
+  .slideshow-image-image {
+    margin: 0;
+  }
+}
