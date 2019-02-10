@@ -36,7 +36,7 @@ class navbar extends Component {
             <Link className="btn btn-outline-success nav-btn m-1" to="/crafts">
               Crafts
             </Link>
-            <Link className="btn btn-outline-success nav-btn m-1" to="/cafe">
+            <Link className="btn btn-outline-success nav-btn m-1" to="/the-millennium-cafe">
               The Millennium Cafe
             </Link>
             <div className="w-100">

@@ -15,7 +15,7 @@ class Routs extends Component {
             <Switch>
             <Default exact path="/" component={Home} />
             <Default exact path="/students" component={Students} />
-            <Default exact path="/cafe" component={TheMillenniumCafe} />
+            <Default exact path="/the-millennium-cafe" component={TheMillenniumCafe} />
             <Default exact path="/crafts" component={Crafts} />
             <Default exact path="/about" component={AboutUs} />
             <Route component={NotFound} />

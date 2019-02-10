@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Hot Drinks",
+    "kind": "Take Away",
+    "menu": [
+      {
+        "name": "Tea",
+        "price": "80p",
+        "takeAway": "£1.00p"
+      },
+      {
+        "name": "Coffee",
+        "price": "£1.00p",
+        "takeAway": "£1.20p"
+      }
+    ]
+  },
+  {
+    "name": "Clod Drinks",
+    "kind": "",
+    "menu": [
+      {
+        "name": "Water",
+        "price": "50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Sparkling Water",
+        "price": "£1.00p",
+        "takeAway": ""
+      },
+      {
+        "name": "Coca Cola",
+        "price": "70p",
+        "takeAway": ""
+      },
+      {
+        "name": "San Pellegrino",
+        "price": "80p",
+        "takeAway": ""
+      },
+      {
+        "name": "7UO",
+        "price": "70p",
+        "takeAway": ""
+      },
+      {
+        "name": "Fanta Orange",
+        "price": "70p",
+        "takeAway": ""
+      },
+      {
+        "name": "Del Monte Orange Juice",
+        "price": "£1.20p",
+        "takeAway": ""
+      }
+    ]
+  },
+  {
+    "name": "Hot Snacks",
+    "kind": "",
+    "menu": [
+      {
+        "name": "Toasted Cheese & Ham",
+        "price": "£1.50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Toasted Cheese",
+        "price": "£1.20p",
+        "takeAway": ""
+      },
+      {
+        "name": "Tost & Butter(1 Slice)",
+        "price": "50p",
+        "takeAway": ""
+      }
+    ]
+  },
+  {
+    "name": "Crisps & Sweets",
+    "kind": "",
+    "menu": [
+      {
+        "name": "Walker's Snack",
+        "price": "50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Walker's Variety",
+        "price": "50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Kellogs Nutrigrain",
+        "price": "50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Eat Natural",
+        "price": "£1.00p",
+        "takeAway": ""
+      },
+      {
+        "name": "Nature Valley Crunchy",
+        "price": "60p",
+        "takeAway": ""
+      },
+      {
+        "name": "Mars Bar",
+        "price": "60p",
+        "takeAway": ""
+      }
+    ]
+  },
+  {
+    "name": "Biscuits",
+    "kind": "",
+    "menu": [
+      {
+        "name": "McVities",
+        "price": "50p",
+        "takeAway": ""
+      },
+      {
+        "name": "Border Biscuits",
+        "price": "50p",
+        "takeAway": ""
+      }
+    ]
+  }
+]
