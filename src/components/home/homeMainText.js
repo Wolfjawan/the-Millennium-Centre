@@ -4,8 +4,9 @@ class HomeMainText extends Component {
   render() {
     return (
       <div className="home-main-text">
+        <h1 className="welcome">Welcome to The Millennium Centre</h1>
         <div>
-          <p>
+          <p className="home-main-text-p">
             The Millennium Centre is a visitor centre which is open to the
             public throughout the year. The building is a permanent exhibition
             of ecological principles as well as housing educational displays in

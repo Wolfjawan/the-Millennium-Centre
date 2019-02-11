@@ -8,6 +8,7 @@ class navbar extends Component {
       <nav
         className="navbar navbar-expand-lg navbar-light"
       >
+      <div></div>
         <img
           className="navbar-brand"
           src={MillenniumCentre}
@@ -15,7 +16,7 @@ class navbar extends Component {
           height="150px"
         />
         <button
-          className="navbar-toggler btn btn-outline-success nav-btn mr-4"
+          className="navbar-toggler btn btn-outline-success nav-btn mr-4 float-right"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"

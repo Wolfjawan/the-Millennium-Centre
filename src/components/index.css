@@ -1,5 +1,6 @@
 .navbar {
-  padding: 0%;
+  /* padding: 1%; */
+  margin: 0% 5%;
 }
 .to-right {
   margin-right: 10%;
@@ -17,5 +18,8 @@
     width: 98%;
     margin: 0 1%;
   }
-
+  .navbar {
+    padding: 1%;
+    margin: 0%;
+  }
 }

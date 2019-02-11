@@ -1,23 +1,23 @@
 .slideshow-image-box {
   display: block;
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 .slideshow-image-image {
   display: block;
   width: 100%;
-  border: 4px solid #08eea1;
-  border-radius: 10px;
 }
 .slideshow-image {
   margin-bottom: 3%;
 }
-.slideshow-image-text {
+.slideshow-image-text1 {
   position: absolute;
-  bottom: 0%;
-  padding: 0% 1%;
-  font-weight: bold;
-  color: #0bff00;
+  color: rgb(255, 255, 255);
+  padding:10px;
+  width: 700px;
+}
+.home-main-text-p{
+  word-break: break-all !important;
 }
 .slideshow-image-text:hover {
   color: #0099ff;

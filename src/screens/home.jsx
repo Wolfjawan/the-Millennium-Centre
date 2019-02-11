@@ -9,15 +9,14 @@ class Home extends Component {
     return (
       <div className="home">
         <div>
-          <h1 className="welcome">Welcome to The Millennium Centre</h1>
-          <section className="home-main-section">
-            <div className="home-main-section-item">
-              <HomeMainText />
-            </div>
             <div className="home-main-section-item">
               <SlideshowImage />
             </div>
-          </section>
+          {/* <section className="home-main-section">
+            <div className="home-main-section-item">
+              <HomeMainText />
+            </div>
+          </section> */}
           <hr className="home-hr" />
           <section>
             <EnergyEfficientDesign />
