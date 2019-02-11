@@ -11,9 +11,7 @@
   height: 4px;
   background: linear-gradient(to right, #7000cc 0, #ff009d 48%, #ee822a 100%);
 }
-.welcome {
-  padding-left: 1.5rem;
-}
+
 .millennium-cafe-section1{
   width: 100%;
   margin-top: 1%;
@@ -22,8 +20,5 @@
   .home-main-section-item {
     width: 98%;
     margin: 1% 1% 0% 1%;
-  }
-  .welcome {
-    font-size: 24px;
   }
 }

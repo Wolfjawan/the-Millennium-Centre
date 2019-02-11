@@ -1,34 +1,6 @@
-.slideshow-image-box {
-  display: block;
+.home-main-text-container {
   height: 500px;
-  width: 100%;
-}
-.slideshow-image-image {
-  display: block;
-  width: 100%;
-}
-.slideshow-image {
-  margin-bottom: 3%;
-}
-.slideshow-image-text1 {
-  position: absolute;
-  color: rgb(255, 255, 255);
-  padding:10px;
-  width: 700px;
-}
-.home-main-text-p{
-  word-break: break-all !important;
-}
-.slideshow-image-text:hover {
-  color: #0099ff;
-  background-color: #2bff00;
-  border: 2px solid #0099ff;
-  border-radius: 4%;
-}
-.slick-dots,
-.slick-next,
-.slick-prev {
-  position: static !important;
+  position: relative;
 }
 .energy-efficient-design {
   padding: 0 10%;
@@ -38,20 +10,42 @@
   width: 100%;
   border: 2px solid #2bff00;
   border-radius: 10px;
-  margin-bottom: 2%
+  margin-bottom: 2%;
 }
-.home-main-text{
-  padding-left: 1.5rem;
+.home-main-text {
+  margin: 1% 0 0 20%;
+  color: rgb(255, 255, 255);
+  width: 70%;
+  padding: 1%;
+  background-color: #4a634079;
+}
+.welcome {
+  background-color: rgba(255, 255, 255, 0.883);
+  text-align: center;
+  width: 60%;
+  margin: 0 20%;
+  border-radius: 5px;
+}
+.home-main-text-p {
+  word-break: break-word !important;
+  background-attachment: fixed;
 }
 @media screen and (max-width: 1000px) {
   .slideshow-image-image {
     margin: 0;
   }
-  .home-main-text{
-    padding: 1rem;
+  .home-main-text {
+    padding: 1%;
+    margin: 0;
+    width: 100%;
   }
   .energy-efficient-design {
     padding: 0 1rem;
     width: 100%;
+  }
+  .welcome {
+    font-size: 24px;
+    width: 98%;
+    margin: 0 1%;
   }
 }

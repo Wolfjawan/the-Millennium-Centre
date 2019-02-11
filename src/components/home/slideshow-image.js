@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import "./index.css";
 // import Student1 from "../../images/Student/1.JPG";
 import Student2 from "../../images/Student/2.JPG";
+import Craft3 from "../../images/Craft/3.JPG";
+import GeneralPhoto3 from "../../images/General/3.JPG";
 // import Student3 from "../../images/Student/3.JPG";
 // import Craft1 from "../../images/Craft/1.JPG";
 // import Craft2 from "../../images/Craft/2.JPG";
-import Craft3 from "../../images/Craft/3.JPG";
 // import GeneralPhoto1 from "../../images/General/1.JPG";
 // import GeneralPhoto2 from "../../images/General/2.JPG";
-import GeneralPhoto3 from "../../images/General/3.JPG";
 import HomeMainText from "./homeMainText";
 class slideshowImage extends Component {
   render() {

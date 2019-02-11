@@ -1,5 +1,4 @@
 .navbar {
-  /* padding: 1%; */
   margin: 0% 5%;
 }
 .to-right {
@@ -12,6 +11,15 @@
   text-align: center;
   padding: 0 20%;
   width: 100%
+}
+.navbar-brand{
+background-color: rgba(12, 194, 218, 0.829);
+border-radius: 10%;
+}
+.nav-btn{
+  color:white !important;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  background-color: rgba(9, 121, 129, 0.589)
 }
 @media screen and (max-width: 1000px) {
   .to-right {
