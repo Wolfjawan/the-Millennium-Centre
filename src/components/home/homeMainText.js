@@ -4,7 +4,7 @@ class HomeMainText extends Component {
   render() {
     return (
       <div className="home-main-text-container">
-        <h1 className="welcome">Welcome to The Millennium Centre</h1>
+        <h1 className="welcome">WELCOME TO THE MILLENNIUM CENTER</h1>
         <div className="home-main-text">
           <p className="home-main-text-p">
             The Millennium Centre is a visitor centre which is open to the
@@ -13,7 +13,7 @@ class HomeMainText extends Component {
             its public spaces.
             <br />
           </p>
-          <p className="home-main-text-p">
+          <span className="home-main-text-p">
             It includes:
             <ul>
               <li>An introduction to the history of the site</li>
@@ -22,7 +22,7 @@ class HomeMainText extends Component {
               </li>
               <li>Environmentally themed educational displays</li>
             </ul>
-          </p>
+          </span>
           <p className="home-main-text-p">
             The building forms a natural gateway into the wide-open spaces of
             Eastbrookend Country Park and the Dagenham Chase Local Nature

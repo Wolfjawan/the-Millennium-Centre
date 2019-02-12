@@ -13,7 +13,7 @@ class ImageBox extends Component {
       boxStyle
     } = this.props;
     return (
-      <div style={boxStyle}>
+      <div style={boxStyle} className="image-box">
         <h3 style={h3Styles}>{h3}</h3>
         <img style={imageStyles} src={src} alt={alt} />
         <p style={pStyles}>{p}</p>
