@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MillenniumCentre from "../../images/Millennium-Centre.jpg";
 import "./index.css";
 class sectionOne extends Component {
   render() {
@@ -14,11 +13,6 @@ class sectionOne extends Component {
             </a>
           </div>
         </div>
-        <img
-          src={MillenniumCentre}
-          alt="Millennium Centre"
-          className="millennium-cafe-s1-image"
-        />
       </div>
     );
   }

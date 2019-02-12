@@ -23,7 +23,6 @@ class Home extends Component {
           style={{ hight: "700px" }}
         />
         <div>
-          <hr className="home-hr" />
           <section>
             <EnergyEfficientDesign />
           </section>

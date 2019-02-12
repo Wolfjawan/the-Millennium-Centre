@@ -3,8 +3,11 @@
   position: relative;
 }
 .energy-efficient-design {
-  padding: 0 10%;
-  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 5%; */
+  width: 100%;
+
 }
 .millennium-Centre-exterior-view-image {
   width: 100%;
@@ -13,11 +16,11 @@
   margin-bottom: 2%;
 }
 .home-main-text {
-  margin: 1% 0 0 20%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6% 5%;
   color: rgb(255, 255, 255);
-  width: 70%;
-  padding: 1%;
-  background-color: #4a634079;
+  width: 90%;
 }
 .welcome {
   background-color: rgba(255, 255, 255, 0.883);
@@ -27,8 +30,15 @@
   border-radius: 5px;
 }
 .home-main-text-p {
+  border-radius: 10px;
+  width: 30%;
+  margin: 1%;
+  padding: 1%;
+  background-color: #0a0a0a6e;
   word-break: break-word !important;
   background-attachment: fixed;
+  text-shadow: 1px 1px 10px black, 0 0 25px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  font-weight: 300;
 }
 @media screen and (max-width: 1000px) {
   .slideshow-image-image {

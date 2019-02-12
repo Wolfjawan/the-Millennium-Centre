@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './index.css'
+import "./index.css";
 class HomeMainText extends Component {
   render() {
     return (
@@ -11,13 +11,18 @@ class HomeMainText extends Component {
             public throughout the year. The building is a permanent exhibition
             of ecological principles as well as housing educational displays in
             its public spaces.
-            <br /> It includes:
+            <br />
           </p>
-          <ul className="home-main-text-p">
-            <li>An introduction to the history of the site</li>
-            <li>Information on the design and construction of the building</li>
-            <li>Environmentally themed educational displays</li>
-          </ul>
+          <p className="home-main-text-p">
+            It includes:
+            <ul>
+              <li>An introduction to the history of the site</li>
+              <li>
+                Information on the design and construction of the building
+              </li>
+              <li>Environmentally themed educational displays</li>
+            </ul>
+          </p>
           <p className="home-main-text-p">
             The building forms a natural gateway into the wide-open spaces of
             Eastbrookend Country Park and the Dagenham Chase Local Nature
