@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HomeMainText from "../components/home/homeMainText";
-import EnergyEfficientDesign from "../components/home/EnergyEfficientDesign";
+import DogFriendly from "../components/home/dogFriendly.js";
 import BackgroundSlideShow from "../components/BackgroundSlideShow/index";
 import Student2 from "../images/Student/2.JPG";
 import Craft3 from "../images/Craft/3.JPG";
@@ -24,7 +24,7 @@ class Home extends Component {
         />
         <div>
           <section>
-            <EnergyEfficientDesign />
+            <DogFriendly />
           </section>
         </div>
       </div>

@@ -110,7 +110,7 @@ class EnergyEfficientDesign extends Component {
             className="millennium-Centre-exterior-view-image"
           />
           <h3>Rainwater recycling</h3>
-          <p>
+          <p id="last">
             Rainwater from the roof is drawn into channels and collects in an
             underground reservoir to be recycled for watering the surrounding
             plants. These features all help to reduce energy consumption of the

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ArrowDown from "../../images/arrow-down.png";
 import "./index.css";
 class HomeMainText extends Component {
   render() {
@@ -6,13 +7,23 @@ class HomeMainText extends Component {
       <div className="home-main-text-container">
         <h1 className="welcome">WELCOME TO THE MILLENNIUM CENTER</h1>
         <div className="home-main-text">
-          <p className="home-main-text-p">
+          <div className="home-main-text-p">
+            <h2 className="bold">Dog Friendly</h2>
+            <p>All four legged friends are welcome but must remain on a lead</p>
+            <img
+              src={ArrowDown}
+              className="arrow-down"
+              alt="Arrow Down"
+            />
+          </div>
+          {/* <p className="home-main-text-p">
             The Millennium Centre is a visitor centre which is open to the
             public throughout the year. The building is a permanent exhibition
             of ecological principles as well as housing educational displays in
             its public spaces.
+            <a href="#last">test</a>
             <br />
-          </p>
+          </p> */}
           <span className="home-main-text-p">
             It includes:
             <ul>
