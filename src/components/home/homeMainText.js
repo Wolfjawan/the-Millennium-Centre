@@ -7,41 +7,40 @@ class HomeMainText extends Component {
       <div className="home-main-text-container">
         <h1 className="welcome">WELCOME TO THE MILLENNIUM CENTER</h1>
         <div className="home-main-text">
-          <div className="home-main-text-p">
-            <h2 className="bold">Dog Friendly</h2>
-            <p>All four legged friends are welcome but must remain on a lead</p>
-            <img
-              src={ArrowDown}
-              className="arrow-down"
-              alt="Arrow Down"
-            />
+          <div className="home-main-text-box">
+            <h3 className="bold">The Millennium Centre</h3>
+            <a href="#home-about">
+              <img
+                src={ArrowDown}
+                className="arrow-down"
+                alt="Arrow Down"
+              />
+            </a>
           </div>
-          {/* <p className="home-main-text-p">
-            The Millennium Centre is a visitor centre which is open to the
-            public throughout the year. The building is a permanent exhibition
-            of ecological principles as well as housing educational displays in
-            its public spaces.
-            <a href="#last">test</a>
-            <br />
-          </p> */}
-          <span className="home-main-text-p">
-            It includes:
-            <ul>
-              <li>An introduction to the history of the site</li>
-              <li>
-                Information on the design and construction of the building
-              </li>
-              <li>Environmentally themed educational displays</li>
-            </ul>
-          </span>
-          <p className="home-main-text-p">
-            The building forms a natural gateway into the wide-open spaces of
-            Eastbrookend Country Park and the Dagenham Chase Local Nature
-            Reserve. The centre acts as the focal point for visitors and
-            provides a comfortable venue for walkers, school groups and anyone
-            wanting to learn more about the local countryside or environment.
-            There are toilets and baby-changing facilities on site.
-          </p>
+          <div className="home-main-text-box">
+            <h3 className="bold">Dog Friendly</h3>
+            <p>All four legged friends are welcome but must remain on a lead</p>
+            <a href="#dog-friendly">
+              <img
+                src={ArrowDown}
+                className="arrow-down"
+                alt="Arrow Down"
+              />
+            </a>
+          </div>
+          <div className="home-main-text-box">
+            <h3 className="bold">Location</h3>
+            <p>
+              The Millennium Centre, The Chase, Dagenham Road, Rush Green, Romford RM7 0SS.
+            </p>
+            <a href="#home-about">
+              <img
+                src={ArrowDown}
+                className="arrow-down"
+                alt="Arrow Down"
+              />
+            </a>
+          </div>
         </div>
       </div>
     );
