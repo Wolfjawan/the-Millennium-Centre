@@ -3,9 +3,15 @@ html {
   min-height: 100%;
   scroll-behavior: smooth;
 }
-
+.main-colors-to-use{
+  color:#FFC321
+        #2D7DD2
+        #97CC04
+        #F45D01
+        #474647
+}
 body {
-  background: linear-gradient(to left, #1bc40c 0, #00ff95 48%, #2a85ee 100%);
+  background: linear-gradient(to left, rgba(151, 204, 4, 0.801) 0, rgba(45, 125, 210, 0.801) 100%);
   font-family: "Roboto", sans-serif !important;
   margin-bottom: 0px;
   font-size: 16px;
@@ -17,7 +23,7 @@ body {
 }
 
 .btn-outline-success {
-  color: black !important;
+  color:#474647 !important;
   border: 1px solid !important;
 }
 .btn-outline-success:hover {

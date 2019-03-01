@@ -14,14 +14,10 @@ class TheMillenniumCafe extends Component {
         <BackgroundSlideShow
           images={images}
           TextComponent={Section1}
-          style={{ height: "650px"}}
+          style={{ height: "650px" }}
         />
-        <section>
-          <WhatWeDo />
-        </section>
-        <section>
-          <Menu />
-        </section>
+        <WhatWeDo />
+        <Menu />
       </div>
     );
   }

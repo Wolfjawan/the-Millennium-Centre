@@ -1,10 +1,18 @@
 import React, { Component } from "react";
 import menu from "./menu.json";
 import CafeImages from "./CafeImages";
+
 class Menu extends Component {
   render() {
     return (
       <div className="menu-container">
+        <div className="menu-tables">
+          <CafeImages />
+          <h1>
+            Millennium Cafe Run by Horizons Team From Barking and Dagenham
+            College
+          </h1>
+        </div>
         <div className="menu-tables">
           <h1 className="menu-tables-h1">MENU</h1>
           {menu.map((menuKind, i) => (
@@ -40,13 +48,6 @@ class Menu extends Component {
               </tbody>
             </table>
           ))}
-        </div>
-        <div className="menu-tables">
-          <CafeImages />
-          <h1>
-            Millennium Cafe Run by Horizons Team From Barking and Dagenham
-            College
-          </h1>
         </div>
       </div>
     );

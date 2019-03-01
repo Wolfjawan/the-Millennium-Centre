@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-
+import './index.css'
 class FullScreenImage extends Component {
   state = {
     IsImage: ""
   };
   onClick = IsImage => {
     this.setState({ IsImage });
-    console.log(IsImage);
   };
   render() {
     const { image, alt, id } = this.props;
@@ -21,27 +20,29 @@ class FullScreenImage extends Component {
             className="cafe-image"
             alt={alt}
             data-toggle="modal"
-            data-target="#ModalAddCity"
+            data-target={`#id${id}`}
           />
-          <div className="modal fade" id="ModalAddCity" role="dialog">
+          <div className="modal fade" id={`id${id}`} role="dialog">
             <div className="modal-dialog">
-              <img
-                src={this.state.IsImage}
-                width="100%"
-                className="cafe-image"
-                alt={alt}
-              />
-              <button
-                type="button"
-                className="btn "
-                data-dismiss="modal"
-                refresh="true"
-              >
-                Close
-              </button>
+              <div className="modal-content">
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                >
+                  x
+                 </button>
+                <img
+                  src={this.state.IsImage}
+                  width="100%"
+                  className="cafe-image"
+                  alt={alt}
+                />
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     );
   }

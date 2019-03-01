@@ -8,7 +8,6 @@ class navbar extends Component {
       <nav
         className="navbar navbar-expand-lg navbar-light"
       >
-      <div></div>
         <img
           className="navbar-brand"
           src={MillenniumCentre}
@@ -16,7 +15,7 @@ class navbar extends Component {
           height="150px"
         />
         <button
-          className="navbar-toggler btn btn-outline-success nav-btn mr-4 float-right"
+          className="navbar-toggler bt nav-btn mr-4 float-right"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
@@ -27,27 +26,27 @@ class navbar extends Component {
           <span className="navbar-toggler-icon m-1" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav w-100">
-            <Link className="btn btn-outline-success nav-btn m-1" to="/">
+          <div className="navbar-nav w-100 ">
+            <Link className="btn nav-btn m-1" to="/">
               Home <span className="sr-only">(current)</span>
             </Link>
-            <Link className="btn btn-outline-success nav-btn m-1" to="/students">
+            <Link className="btn nav-btn m-1" to="/students">
               Our Students
             </Link>
-            <Link className="btn btn-outline-success nav-btn m-1" to="/crafts">
+            <Link className="btn nav-btn m-1" to="/crafts">
               Crafts
             </Link>
-            <Link className="btn btn-outline-success nav-btn m-1" to="/the-millennium-cafe">
+            <Link className="btn nav-btn m-1" to="/the-millennium-cafe">
               The Millennium Cafe
             </Link>
-            <div className="w-100">
               <Link
-                className="btn btn-outline-success nav-btn to-right float-right"
+                className="btn nav-btn m-1"
                 to="/about"
               >
                 About Us
               </Link>
-            </div>
+            {/* <div className="w-100">
+            </div> */}
           </div>
         </div>
       </nav>

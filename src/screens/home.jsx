@@ -17,11 +17,11 @@ const images = [
 class Home extends Component {
   render() {
     return (
-      <div className="home">
+      <div className="w-100">
         <BackgroundSlideShow
           images={images}
           TextComponent={HomeMainText}
-          style={{ hight: "700px" }}
+          style={{ height: "630px" }}
         />
         <div className="home-arrow-down">
           <a href="#home-about">
@@ -32,20 +32,18 @@ class Home extends Component {
             />
           </a>
         </div>
-        <div>
-          <About />
-          <div className="home-arrow-down">
-            <a href="#dog-friendly">
-              <img
-                src={ArrowDown}
-                className="arrow-down"
-                alt="Arrow Down"
-                style={{ top: "-25px" }}
-              />
-            </a>
-          </div>
-          <DogFriendly />
+        <About />
+        <div className="home-arrow-down">
+          <a href="#dog-friendly">
+            <img
+              src={ArrowDown}
+              className="arrow-down"
+              alt="Arrow Down"
+              style={{ top: "-25px" }}
+            />
+          </a>
         </div>
+        <DogFriendly />
       </div>
     );
   }
