@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './index.css'
+import "./index.css";
 class FullScreenImage extends Component {
   state = {
     IsImage: ""
@@ -8,16 +8,15 @@ class FullScreenImage extends Component {
     this.setState({ IsImage });
   };
   render() {
-    const { image, alt, id } = this.props;
+    const { image, alt, id, style } = this.props;
     return (
-      <div id={id} className={id}>
+      <div id={id} className={id} style={style}>
         <div>
           <img
             onClick={() => this.onClick(image)}
             id={id}
             src={image}
             width="100%"
-            className="cafe-image"
             alt={alt}
             data-toggle="modal"
             data-target={`#id${id}`}
@@ -25,24 +24,14 @@ class FullScreenImage extends Component {
           <div className="modal fade" id={`id${id}`} role="dialog">
             <div className="modal-dialog">
               <div className="modal-content">
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="modal"
-                >
+                <button type="button" className="close" data-dismiss="modal">
                   x
-                 </button>
-                <img
-                  src={this.state.IsImage}
-                  width="100%"
-                  className="cafe-image"
-                  alt={alt}
-                />
+                </button>
+                <img src={this.state.IsImage} width="100%" alt={alt} />
               </div>
             </div>
           </div>
         </div>
-
       </div>
     );
   }

@@ -17,7 +17,7 @@
   width: 100%
 }
 .navbar-brand{
-background-color: rgba(12, 194, 218, 0.829);
+background-color: #474647f8;
 border-radius:0 15%;
 }
 .nav-btn{
@@ -38,6 +38,7 @@ border-radius:0 15%;
 .close-btn{
  top: -10px !important
 }
+
 @media screen and (max-width: 1000px) {
   .navbar-nav{
     margin-left: 0%
