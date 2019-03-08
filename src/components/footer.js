@@ -4,6 +4,7 @@ class footer extends Component {
   render() {
     return (
       <footer className="footer">
+        <a href="#navbar">Go Up</a>
         <p className="text-center">
           The Millennium Centre © 2019. All rights reserved.
         </p>

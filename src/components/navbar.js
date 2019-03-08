@@ -7,6 +7,7 @@ class navbar extends Component {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-light"
+        id="navbar"
       >
         <img
           className="navbar-brand"
