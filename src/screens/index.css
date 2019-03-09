@@ -43,6 +43,13 @@
   margin:1%;
   height: 350px !important;
   box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  border-radius: 0 20px;
+}
+.about-page-section-one{
+/* height: 300px; */
+}
+.about-page-section-two{
+
 }
 @media screen and (max-width: 1000px) {
   .home-main-section-item {
@@ -56,12 +63,17 @@
   }
   .home-section-two {
     display: block;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
+    background-color: #85b40500;
+    margin: 0 1%;
   }
   .google-maps {
     position: block;
     width: 100%;
+    margin: 0%;
     height: 350px !important;
     padding: 2%;
-    border-radius: 0 20px;
+    border-radius: 0;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
   }
 }

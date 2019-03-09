@@ -24,11 +24,6 @@ class Home extends Component {
           TextComponent={HomeMainText}
           style={{ height: "630px" }}
         />
-        {/* <div className="home-arrow-down">
-          <a href="#opening-hours">
-            <img src={ArrowDown} className="arrow-down" alt="Arrow Down" />
-          </a>
-        </div> */}
         <div className="home-arrow-down">
           <a href="#home-about">
             <img

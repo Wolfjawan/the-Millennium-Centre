@@ -51,12 +51,6 @@ class About extends Component {
             id="TheMillenniumCentre"
             image={TheMillenniumCentre}
             alt="TheMillenniumCentre"
-            style={{
-              borderRadius: "0 20px",
-              margin: "1%",
-              width: "50%",
-              float: "right"
-            }}
           />
           <div className="about-section-one">
             <h3>The Millennium Centre</h3>
@@ -89,12 +83,6 @@ class About extends Component {
             id="TheMillenniumCentreWildlifeImage"
             image={TheMillenniumCentreWildlifeImage}
             alt="TheMillenniumCentreWildlifeImage"
-            style={{
-              borderRadius: "0 20px",
-              margin: "1%",
-              marginRight: "0%",
-              width: "100%"
-            }}
           />
           <div className="about-section-two">
             <h2>The Millennium Centre Wildlife </h2>

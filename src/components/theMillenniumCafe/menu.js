@@ -8,10 +8,6 @@ class Menu extends Component {
       <div className="menu-container">
         <div className="menu-tables">
           <CafeImages />
-          <h1>
-            Millennium Cafe Run by Horizons Team From Barking and Dagenham
-            College
-          </h1>
         </div>
         <div className="menu-tables">
           <h1 className="menu-tables-h1">MENU</h1>
