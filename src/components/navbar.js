@@ -14,9 +14,9 @@ class navbar extends Component {
           alt="Millennium Centre"
           height="150px"
         />
-        <button
+        <span
           className="navbar-toggler bt nav-btn mr-4 float-right"
-          type="button"
+          type="span"
           data-toggle="collapse"
           data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup"
@@ -24,7 +24,7 @@ class navbar extends Component {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon m-1" />
-        </button>
+        </span>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav w-100 ">
             <Link className="btn nav-btn m-1" to="/">
@@ -45,8 +45,6 @@ class navbar extends Component {
               >
                 About Us
               </Link>
-            {/* <div className="w-100">
-            </div> */}
           </div>
         </div>
       </nav>
