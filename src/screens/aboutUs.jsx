@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import BackgroundSlideShow from "../components/BackgroundSlideShow/index";
 import LakeView from '../images/General/29.jpg';
-import Location from '../components/aboutUs/location'
+import Header from '../components/aboutUs/header'
 const images = [
   { image: LakeView }
 ];
@@ -11,7 +11,7 @@ class AboutUs extends Component {
       <div>
         <BackgroundSlideShow
           images={images}
-          TextComponent={Location}
+          TextComponent={Header}
           style={{ height: "730px" }}
         />
         <section className="about-page-section-one">

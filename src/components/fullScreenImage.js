@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./index.css";
 class FullScreenImage extends Component {
   render() {
     const { image, alt, id, style } = this.props;
@@ -12,6 +11,7 @@ class FullScreenImage extends Component {
           alt={alt}
           data-toggle="modal"
           data-target={`#id${id}`}
+          style={{borderRadius:"0 20px"}}
         />
         <div className="modal fade" id={`id${id}`} role="dialog">
           <div className="modal-dialog">

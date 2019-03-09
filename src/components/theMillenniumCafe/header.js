@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "./index.css";
-class sectionOne extends Component {
+class Header extends Component {
   render() {
     return (
       <div className="millennium-cafe-s1">
@@ -18,4 +17,4 @@ class sectionOne extends Component {
   }
 }
 
-export default sectionOne;
+export default Header;

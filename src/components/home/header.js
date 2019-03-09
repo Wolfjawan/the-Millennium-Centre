@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import "./index.css";
-class HomeMainText extends Component {
+class Header extends Component {
   render() {
     return (
       <div>
@@ -15,24 +14,24 @@ class HomeMainText extends Component {
                 The Millennium Centre is a visitor centre which is open to the
                 public throughout the year.
               </p>
-              <a href="#home-about" style={{color:"#fff"}}>Read more</a>
+              <a href="#home-about" style={{ color: "#fff" }}>Read more</a>
             </div>
             <div className="home-main-text-box">
               <h3 className="bold">Dog Friendly</h3>
               <p>
                 All four legged friends are welcome but must remain on a lead
               </p>
-              <a href="#dog-friendly" style={{color:"#fff"}}>Read more</a>
+              <a href="#dog-friendly" style={{ color: "#fff" }}>Read more</a>
             </div>
             <div className="home-main-text-box">
               <h3 className="bold">Location</h3>
               <div>
-              <a target="_blanc" href="https://www.google.com/maps/place/Dagenham,+Romford+RM7+0SS/@51.5536496,0.1765393,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a52893f3c2c7:0x68b5f85c5e917a1f!8m2!3d51.5536496!4d0.178728" style={{color:"#fff"}}>
-                The Millennium Centre, The Chase, Dagenham Road, Rush Green,
-                Romford RM7 0SS.
+                <a target="_blanc" href="https://www.google.com/maps/place/Dagenham,+Romford+RM7+0SS/@51.5536496,0.1765393,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a52893f3c2c7:0x68b5f85c5e917a1f!8m2!3d51.5536496!4d0.178728" style={{ color: "#fff" }}>
+                  The Millennium Centre, The Chase, Dagenham Road, Rush Green,
+                  Romford RM7 0SS.
               </a>
               </div>
-              <a href="#home-section-two" style={{color:"#fff"}}>Read more</a>
+              <a href="#home-section-two" style={{ color: "#fff" }}>Read more</a>
             </div>
           </div>
         </div>
@@ -41,4 +40,4 @@ class HomeMainText extends Component {
   }
 }
 
-export default HomeMainText;
+export default Header;

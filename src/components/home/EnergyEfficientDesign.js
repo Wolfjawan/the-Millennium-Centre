@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import EnergyEfficientDesignImg from "../../images/Millennium-Centre-exterior-view.jpg";
-import "./index.css";
 
 class EnergyEfficientDesign extends Component {
   render() {

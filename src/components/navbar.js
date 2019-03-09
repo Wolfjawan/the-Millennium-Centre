@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import MillenniumCentre from "../images/Logo.png";
-import './index.css'
 class navbar extends Component {
   render() {
     return (
