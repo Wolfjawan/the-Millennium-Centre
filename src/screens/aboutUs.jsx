@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import BackgroundSlideShow from "../components/BackgroundSlideShow/index";
-import LakeView from '../images/General/29.jpg';
-import Header from '../components/aboutUs/header'
-const images = [
-  { image: LakeView }
-];
+import LakeView from "../images/General/29.jpg";
+import Header from "../components/aboutUs/header";
+import ContentForm from "../components/aboutUs/contactForm";
+const images = [{ image: LakeView }];
 class AboutUs extends Component {
   render() {
     return (
@@ -14,13 +13,8 @@ class AboutUs extends Component {
           TextComponent={Header}
           style={{ height: "730px" }}
         />
-        <section className="about-page-section-one">
-
-        </section>
-        <section className="about-page-section-two">
-
-        </section>
-
+        <ContentForm />
+        <section className="about-page-section-two" />
       </div>
     );
   }

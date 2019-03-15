@@ -5,11 +5,15 @@ html {
 }
 
 .main-colors-to-use {
-  color: #FFC321 #2D7DD2 #97CC04 #F45D01 #474647
+  color: #ffc321 #2d7dd2 #97cc04 #f45d01 #474647;
 }
 
 body {
-  background: linear-gradient(to left, rgba(151, 204, 4, 0.801) 0, rgba(45, 125, 210, 0.801) 100%);
+  background: linear-gradient(
+    to left,
+    rgba(151, 204, 4, 0.801) 0,
+    rgba(45, 125, 210, 0.801) 100%
+  );
   font-family: "Roboto", sans-serif !important;
   margin-bottom: 0px;
   font-size: 16px;
@@ -121,7 +125,7 @@ components folder
   bottom: 0;
   text-align: center;
   padding: 0 20%;
-  width: 100%
+  width: 100%;
 }
 
 .navbar-brand {
@@ -133,12 +137,13 @@ components folder
   border: 1px solid;
   border-radius: 0% 15px;
   color: white !important;
-  text-shadow: 0.05px 0.05px 0.05px rgb(0, 0, 0), 0.05px 0.05px 0.05px rgb(0, 0, 0);
-  background-color: rgba(45, 125, 210, 0.959)
+  text-shadow: 0.05px 0.05px 0.05px rgb(0, 0, 0),
+    0.05px 0.05px 0.05px rgb(0, 0, 0);
+  background-color: rgba(45, 125, 210, 0.959);
 }
 
 .navbar-nav {
-  margin-left: 10%
+  margin-left: 10%;
 }
 
 .nav-btn:hover {
@@ -149,7 +154,7 @@ components folder
 }
 
 .close-btn {
-  top: -10px !important
+  top: -10px !important;
 }
 
 /* 
@@ -192,14 +197,14 @@ component > home folder
   color: #1b1b1b;
   text-align: center;
   max-height: 350px;
-  right: 60px
+  right: 60px;
 }
 
 .about-section-two-main {
   width: 98%;
   margin: 1%;
-  display: inline-flex
-    /* flex-wrap: wrap; */
+  display: inline-flex;
+  /* flex-wrap: wrap; */
 }
 
 .energy-efficient-design {
@@ -248,10 +253,12 @@ component > home folder
 .image-box {
   border-top: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-image: linear-gradient(to right bottom,
+  border-image: linear-gradient(
+    to right bottom,
     #ff9d00 0%,
     #ff6600 50%,
-    #ff0037 100%);
+    #ff0037 100%
+  );
   padding: 10px;
   border-image-slice: 1;
   text-shadow: 0.5px 0.5px 0.5px rgb(255, 255, 255),
@@ -317,7 +324,7 @@ component > home folder
   border-radius: 0 20px;
   margin: 1%;
   width: 50%;
-  float: right
+  float: right;
 }
 
 /*
@@ -461,12 +468,14 @@ component > theMillenniumCafe folder
 
 .cafe-image {
   border: 4px solid transparent;
-  border-image: linear-gradient(to right bottom,
+  border-image: linear-gradient(
+    to right bottom,
     #ff9d00 0%,
     #ff6600 50%,
-    #ff0037 100%);
+    #ff0037 100%
+  );
   border-image-slice: 1;
-  border-radius: 0% 15px
+  border-radius: 0% 15px;
 }
 
 .modal-dialog {
@@ -534,15 +543,15 @@ component > about us folder
 }
 
 .about-opening-hours-media {
-  display: none
+  display: none;
 }
-
-
-
-
-
-
-
+.content-form-container {
+  width: 40%;
+  background-color: #ffffff;
+  margin: 0 2%;
+  padding: 2%;
+  border-radius: 0 20px;
+}
 
 @media screen and (max-width: 1000px) {
   .to-right {
@@ -605,7 +614,7 @@ component > about us folder
   
   */
   .navbar-nav {
-    margin-left: 0%
+    margin-left: 0%;
   }
 
   .navbar {
@@ -671,7 +680,7 @@ component > about us folder
   .about-section-two-main {
     width: 98%;
     margin: 1%;
-    display: block
+    display: block;
   }
 
   .about-section-one {
@@ -684,7 +693,7 @@ component > about us folder
     position: relative;
     margin: 1% 0%;
     width: 100%;
-    right: 0px
+    right: 0px;
   }
 
   .dog-friendly {
@@ -707,7 +716,7 @@ component > about us folder
   .TheMillenniumCentre {
     margin: 1% 0;
     width: 100%;
-    float: none
+    float: none;
   }
 
   /*
@@ -771,7 +780,7 @@ component > about us folder
   .modal-dialog {
     max-width: 100% !important;
   }
- /*
+  /*
 
 
 

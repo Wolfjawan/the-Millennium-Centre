@@ -10,7 +10,7 @@ class About extends Component {
         <h3>Birds</h3>
         <p>
           Skylarks are becoming rare, probably because of the chemicals used by
-          farmers.Eastbrookend and The Chase are chemical free zones which means
+          farmers. Eastbrookend and The Chase are chemical free zones which means
           visitors have plenty of opportunity to listen out for the music of the
           skylarks. During the summer months the scrubland provides valuable
           feeding and nesting habitat for small birds such as the blackcap.
