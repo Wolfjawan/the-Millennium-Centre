@@ -326,7 +326,14 @@ component > home folder
   width: 50%;
   float: right;
 }
-
+.arrow-down-dog-friendly {
+  top: -35px;
+  background-color: #ffc321;
+}
+.arrow-down-home-section-two{
+  top: -25px;
+  background-color: #86b405;
+}
 /*
 
 
@@ -552,7 +559,52 @@ component > about us folder
   padding: 2%;
   border-radius: 0 20px;
 }
+.contact-submit-btn{
+  width: 100%;
+  border-radius: 0 20px;
+}
+/* 
 
+
+students page
+
+
+*/
+
+.students-header-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.students-header-qualifications {
+  width: 600px;
+  background-color: #8bbb07e3;
+  padding: 2%;
+  margin: 100px 15% 0 15%;
+  border-radius: 0 20px;
+}
+.students-images {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.students-image {
+  width: 30%;
+  height: 100px;
+}
+.image-slider {
+  width: 90%;
+  margin: 1% 5%;
+}
+.image-slider-image {
+  width: 94%;
+  margin: 2%;
+  cursor: zoom-in;
+  border: 4px solid #6407bbe3;
+  border-radius:0 20px
+}
 @media screen and (max-width: 1000px) {
   .to-right {
     width: 100%;
@@ -718,7 +770,12 @@ component > about us folder
     width: 100%;
     float: none;
   }
-
+  .arrow-down-dog-friendly {
+    top: -20px;
+  }
+  .arrow-down-home-section-two{
+    top: -15px;
+  }
   /*
   
   
@@ -832,5 +889,28 @@ component > about us folder
     position: relative;
     display: block;
     border-radius: 0 20px;
+  }
+  .content-form-container {
+    width: 96%;
+  }
+  .contact-submit-btn{
+    border-radius: 0 15px;
+  }
+  /* 
+
+
+students page
+
+
+*/
+
+  .students-header-main {
+    position: relative;
+    display: block;
+  }
+  .students-header-qualifications {
+    width: 96%;
+    margin: 2%;
+    border-radius: 20px;
   }
 }

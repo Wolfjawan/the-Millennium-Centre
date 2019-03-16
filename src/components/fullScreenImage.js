@@ -11,14 +11,14 @@ class FullScreenImage extends Component {
           alt={alt}
           data-toggle="modal"
           data-target={`#id${id}`}
-          style={{borderRadius:"0 20px", cursor: "pointer"}}
+          style={{ borderRadius: "0 20px", cursor: "zoom-in" }}
         />
         <div className="modal fade" id={`id${id}`} role="dialog">
           <div className="modal-dialog">
             <div className="modal-content">
               <button type="button" className="close" data-dismiss="modal">
                 x
-                </button>
+              </button>
               <img src={image} width="100%" alt={alt} />
             </div>
           </div>

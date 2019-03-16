@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import BackgroundSlideShow from "../components/BackgroundSlideShow/index";
+import BackGroundImage from "../components/backGroundImage";
 
 class Crafts extends Component {
   render() {
     return (
       <div>
-        <BackgroundSlideShow />
+        <BackGroundImage />
         Crafts
       </div>
     );

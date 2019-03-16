@@ -82,7 +82,7 @@ class ContactForm extends Component {
               onChange={this.onChange}
             />
           </div>
-          <button class="btn btn-primary" type="submit">
+          <button class="btn contact-submit-btn btn-primary" type="submit">
             Submit form
           </button>
         </form>
