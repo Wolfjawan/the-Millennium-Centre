@@ -31,7 +31,7 @@ jobs:
           command: echo "$DOCKER_PASS" | docker login -u $DOCKER_USER --password-stdin
       - run:
           name: Docker push the-millennium-centre
-          command: docker push wolfjawan/the-millennium-centre
+          command: docker push the-millennium-centre
   deploy_production:
     docker:
       - image: circleci/python:2.7-jessie
