@@ -7,10 +7,6 @@ jobs:
     working_directory: ~/the-Millennium-Centre
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - yarn-dependencies-{{ checksum "the-Millennium-Centre/yarn.lock" }}
-      - setup_remote_docker
       - run:
           name: Install dependencies for lint and test
           command: yarn
@@ -24,14 +20,14 @@ jobs:
       - run:
           name: Docker build the-millennium-centre
           command: |
-            docker build -t the-millennium-centre:$VERSION --build-arg version=$VERSION .
-            docker tag the-millennium-centre:$VERSION the-millennium-centre:latest
+            docker build -t wolfjawan/the-millennium-centre:$VERSION --build-arg version=$VERSION .
+            docker tag wolfjawan/the-millennium-centre:$VERSION wolfjawan/the-millennium-centre:latest
       - run:
           name: Docker login
           command: echo "$DOCKER_PASS" | docker login -u $DOCKER_USER --password-stdin
       - run:
           name: Docker push the-millennium-centre
-          command: docker push the-millennium-centre
+          command: docker push wolfjawan/the-millennium-centre
   deploy_production:
     docker:
       - image: circleci/python:2.7-jessie
