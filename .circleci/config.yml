@@ -67,7 +67,6 @@ workflows:
   build_and_test:
     jobs:
       - build_test:
-          context: build
           filters:
             branches:
               only:    
