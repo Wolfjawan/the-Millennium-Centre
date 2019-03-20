@@ -1,0 +1,17 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: applicationprocess-svc
+  labels:
+    app: applicationprocess
+spec:
+  type: NodePort
+  selector:
+    app: applicationprocess
+    tier: frontend
+  ports:
+    - protocol: TCP
+      name: http
+      port: 80
+      targetPort: 3000

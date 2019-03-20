@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import NavBar from "./navbar";
 class Index extends Component {
-
   render() {
     const { style, image } = this.props;
     return (
       <div style={style}>
         <span
           style={{
-            backgroundImage: `url(${image})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(${image})`,
             position: "absolute",
             width: "100%",
             height: "650px",
@@ -20,7 +19,7 @@ class Index extends Component {
           }}
         />
         <NavBar />
-        {this.props.TextComponent && <this.props.TextComponent />}
+        {this.props.Header && <this.props.Header />}
       </div>
     );
   }

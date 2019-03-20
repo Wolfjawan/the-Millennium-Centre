@@ -9,7 +9,7 @@ class AboutUs extends Component {
       <div>
         <BackGroundImage
           image={LakeView}
-          TextComponent={Header}
+          Header={Header}
           style={{ height: "730px" }}
         />
         <ContentForm />

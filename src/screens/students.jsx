@@ -30,7 +30,7 @@ class Students extends Component {
       <div className="w-100">
         <BackgroundSlideShow
           image={StudentImage}
-          TextComponent={Header}
+          Header={Header}
           style={{ height: "650px" }}
         />
         <Slider images={images} />

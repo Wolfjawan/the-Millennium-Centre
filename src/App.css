@@ -9,15 +9,15 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    to left,
-    rgba(151, 204, 4, 0.801) 0,
-    rgba(45, 125, 210, 0.801) 100%
-  );
   font-family: "Roboto", sans-serif !important;
   margin-bottom: 0px;
   font-size: 16px;
   min-height: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(152, 189, 51, 0.801) 0,
+    rgba(51, 110, 172, 0.801) 100%
+  );
 }
 
 .main {
@@ -119,15 +119,21 @@ components folder
   position: relative;
 }
 
-.footer {
+.footer-dev {
   position: absolute;
-  height: 50px;
+  height: 70px;
   bottom: 0;
   text-align: center;
-  padding: 0 20%;
   width: 100%;
 }
-
+.footer {
+  background-color: #181818;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  padding: 10px 20%;
+  width: 100%;
+}
 .navbar-brand {
   background-color: #474647f8;
   border-radius: 0 15%;
@@ -221,7 +227,7 @@ component > home folder
   width: 60%;
   margin: 0 20%;
   border-radius: 5px;
-  color: #f45d01;
+  color: #ffffff;
   font-weight: 1000;
   font-size: 65px;
 }
@@ -602,8 +608,17 @@ students page
   width: 94%;
   margin: 2%;
   cursor: zoom-in;
-  border: 4px solid #6407bbe3;
-  border-radius:0 20px
+  border: 4px solid #ffffffe3;
+  border-radius:0 20px;
+}
+/* 
+
+component craft
+
+
+*/
+.craft-header{
+  position: relative;
 }
 @media screen and (max-width: 1000px) {
   .to-right {
@@ -672,6 +687,9 @@ students page
   .navbar {
     padding: 1%;
     margin: 0%;
+  }
+  .footer {
+    height: 60px;
   }
 
   /*

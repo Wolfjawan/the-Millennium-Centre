@@ -11,7 +11,7 @@ class TheMillenniumCafe extends Component {
       <div className="w-100">
         <BackGroundImage
           image={MillenniumCentre}
-          TextComponent={Header}
+          Header={Header}
           style={{ height: "650px" }}
         />
         <WhatWeDo />

@@ -7,7 +7,7 @@ class slideshowImage extends Component {
     fullImage: ""
   };
   render() {
-    const mq = window.matchMedia("(max-width: 1000px)");
+    const mq = window.matchMedia("(max-width: 700px)");
     var settings = {
       dots: true,
       infinite: true,
@@ -15,7 +15,7 @@ class slideshowImage extends Component {
       slidesToShow: mq.matches ? 1 : 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 2000,
       arrows: !mq.matches
     };
     const { images } = this.props;

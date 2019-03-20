@@ -1,0 +1,19 @@
+---
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: application-process-codeyourfuture-io
+spec:
+  secretName: application-process-codeyourfuture-io-tls
+  issuerRef:
+    name: letsencrypt-production
+    kind: ClusterIssuer
+  commonName: application-process.codeyourfuture.io
+  dnsNames:
+    - application-process.codeyourfuture.io
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - application-process.codeyourfuture.io

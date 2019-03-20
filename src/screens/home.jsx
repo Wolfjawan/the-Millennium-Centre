@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import HomeMainText from "../components/home/header";
+import Header from "../components/home/header";
 import DogFriendly from "../components/home/dogFriendly.js";
 import BackGroundImage from "../components/backGroundImage";
 // import Student2 from "../images/Student/2.JPG";
@@ -17,7 +17,7 @@ class Home extends Component {
       <div className="w-100" id="home-page">
         <BackGroundImage
           image={GeneralPhoto3}
-          TextComponent={HomeMainText}
+          Header={Header}
           style={{ height: "630px" }}
         />
         <div className="home-arrow-down">

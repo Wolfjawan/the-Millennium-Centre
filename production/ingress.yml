@@ -1,0 +1,24 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: application-process-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    ingress.kubernetes.io/rewrite-target: /
+    external-dns.alpha.kubernetes.io/hostname: "application-process.codeyourfuture.io"
+    kubernetes.io/tls-acme: "true"
+    certmanager.k8s.io/cluster-issuer: letsencrypt-production
+spec:
+  tls:
+    - secretName: application-process-codeyourfuture-io-tls
+      hosts:
+        - "application-process.codeyourfuture.io"
+  rules:
+    - host: application-process.codeyourfuture.io
+      http:
+        paths:
+          - backend:
+              serviceName: applicationprocess-svc
+              servicePort: 80
+            path: /
