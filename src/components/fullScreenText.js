@@ -10,13 +10,13 @@ class FullScreenImage extends Component {
     const { text, id, textBtn } = this.props;
     return (
       <div id={id} className={id}>
-        <a
+        <span
           className="read-more"
           data-toggle="modal"
           data-target={`#id${id}`}
         >
           {textBtn}
-        </a>
+        </span>
         <div className="modal fade" id={`id${id}`} role="dialog">
           <div className="modal-dialog">
             <div className="modal-content">

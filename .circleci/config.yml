@@ -29,17 +29,16 @@ jobs:
       - run:
           name: Docker push the-millennium-centre
           command: docker push wolfjawan/the-millennium-centre
-  deploy_production:
-    docker:
-      - image: circleci/python:2.7-jessie
-    working_directory: ~/repo
-    steps:
-      - setup_remote_docker
-      - run:
-          name: Set env variables
-          command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
-
-          # kubectl set image deployment/the-millennium-centre the-millennium-centre=wolfjawan/the-millennium-centre:$VERSION
+  # deploy_production:
+  #   docker:
+  #     - image: circleci/python:2.7-jessie
+  #   working_directory: ~/repo
+  #   steps:
+  #     - setup_remote_docker
+  #     - run:
+  #         name: Set env variables
+  #         command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
+  #   kubectl set image deployment/the-millennium-centre the-millennium-centre=wolfjawan/the-millennium-centre:$VERSION
      
 workflows:
   version: 2
