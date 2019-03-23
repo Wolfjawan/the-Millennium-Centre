@@ -14,7 +14,7 @@ class Header extends Component {
                 The Millennium Centre is a visitor centre which is open to the
                 public throughout the year.
               </p>
-              <a href="#home-about" style={{ color: "#fff" }}>Read more</a>
+              <a href="#home-about" >Read more</a>
             </div>
             <div className="home-main-text-box">
               <h3 className="bold">Dog Friendly</h3>
@@ -31,7 +31,6 @@ class Header extends Component {
                   Romford RM7 0SS.
               </a>
               </div>
-              <a href="#home-section-two" style={{ color: "#fff" }}>Read more</a>
             </div>
           </div>
         </div>

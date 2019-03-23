@@ -13,8 +13,8 @@ class ContactForm extends Component {
       [e.target.name]: e.target.value
     });
   };
-  handelSubmit = (event) => {
-    event.preventDefault()
+  handelSubmit = event => {
+    event.preventDefault();
     // const { fullName, email, number, message, subject } = this.state;
     // const emailData = { fullName, email, number, message, subject }
     // mailer(emailData)
@@ -26,7 +26,7 @@ class ContactForm extends Component {
         <h1>Contact us</h1>
         <form>
           <div className="form-group">
-            <label for="fullName" onClick={this.handelSubmit}>
+            <label htmlFor="fullName" onClick={this.handelSubmit}>
               Full name
             </label>
             <input
@@ -39,7 +39,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               className="form-control"
@@ -50,7 +50,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="number">Number</label>
+            <label htmlFor="number">Number</label>
             <input
               type="text"
               className="form-control"
@@ -61,7 +61,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
             <input
               type="text"
               className="form-control"
@@ -72,7 +72,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               type="text"
               className="form-control"
@@ -82,7 +82,7 @@ class ContactForm extends Component {
               onChange={this.onChange}
             />
           </div>
-          <button class="btn contact-submit-btn btn-primary" type="submit">
+          <button className="btn contact-submit-btn btn-primary" type="submit">
             Submit form
           </button>
         </form>

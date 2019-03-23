@@ -25,9 +25,8 @@ class slideshowImage extends Component {
         <Slider {...settings}>
           {images.map((image, i) => {
             return (
-              <div>
+              <div key={i}>
                 <img
-                  key={i}
                   src={image}
                   alt={"Students"}
                   className="image-slider-image"

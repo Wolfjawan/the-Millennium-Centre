@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Header extends Component {
   render() {
     return (
-      <div className="students-header-main">
-        <div className="students-header-qualifications">
+      <div className="header-text-container">
+        <div className="header-text">
           <h2>Qualifications</h2>
           <p>
             The students at the Millennium Centre have learning difficulties or

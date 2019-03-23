@@ -3,6 +3,7 @@ import BackGroundImage from "../components/backGroundImage";
 import LakeView from "../images/General/29.jpg";
 import Header from "../components/aboutUs/header";
 import ContentForm from "../components/aboutUs/contactForm";
+import ContactDetails from "../components/aboutUs/contactDetails";
 class AboutUs extends Component {
   render() {
     return (
@@ -12,8 +13,10 @@ class AboutUs extends Component {
           Header={Header}
           style={{ height: "730px" }}
         />
+        <div className="about-us-section">
+        <ContactDetails />
         <ContentForm />
-        <section className="about-page-section-two" />
+        </div>
       </div>
     );
   }

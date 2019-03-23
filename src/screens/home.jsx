@@ -7,9 +7,6 @@ import BackGroundImage from "../components/backGroundImage";
 import GeneralPhoto3 from "../images/General/3.JPG";
 import About from "../components/home/about";
 import ArrowDown from "../images/arrow-down.png";
-import Location from '../components/location';
-import OpeningHours from '../components/OpeningHours'
-
 
 class Home extends Component {
   render() {
@@ -31,30 +28,6 @@ class Home extends Component {
           </a>
         </div>
         <About />
-        <div className="home-arrow-down">
-          <a href="#home-section-two">
-            <img
-              src={ArrowDown}
-              className="arrow-down arrow-down-home-section-two"
-              alt="Arrow Down"
-            />
-          </a>
-        </div>
-        <section className="home-section-two" id="home-section-two">
-          <Location />
-          <div id="opening-hours" className="opening-hours">
-            <OpeningHours />
-          </div>
-        </section>
-        <div className="home-arrow-down">
-          <a href="#dog-friendly">
-            <img
-              src={ArrowDown}
-              className="arrow-down arrow-down-dog-friendly"
-              alt="Arrow Down"
-            />
-          </a>
-        </div>
         <DogFriendly />
       </div>
     );
