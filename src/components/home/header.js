@@ -14,14 +14,14 @@ class Header extends Component {
                 The Millennium Centre is a visitor centre which is open to the
                 public throughout the year.
               </p>
-              <a href="#home-about" >Read more</a>
+              <a href="#home-about" className="read-more">Read more</a>
             </div>
             <div className="home-main-text-box">
               <h3 className="bold">Dog Friendly</h3>
               <p>
                 All four legged friends are welcome but must remain on a lead
               </p>
-              <a href="#dog-friendly" style={{ color: "#fff" }}>Read more</a>
+              <a href="#dog-friendly" className="read-more">Read more</a>
             </div>
             <div className="home-main-text-box">
               <h3 className="bold">Location</h3>

@@ -14,6 +14,18 @@ body {
     rgba(51, 110, 172, 0.801) 100%
   );
 }
+.read-more {
+  color: #ffc321 !important;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.read-more:hover {
+  color: #177bda !important;
+  font-size: 19px;
+  text-decoration: none;
+}
 .main {
   position: relative;
   margin-bottom: 200px;

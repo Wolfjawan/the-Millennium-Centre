@@ -10,13 +10,13 @@ class FullScreenImage extends Component {
     const { text, id, textBtn } = this.props;
     return (
       <div id={id} className={id}>
-        <h5
-          style={{ cursor: "pointer" }}
+        <a
+          className="read-more"
           data-toggle="modal"
           data-target={`#id${id}`}
         >
           {textBtn}
-        </h5>
+        </a>
         <div className="modal fade" id={`id${id}`} role="dialog">
           <div className="modal-dialog">
             <div className="modal-content">
