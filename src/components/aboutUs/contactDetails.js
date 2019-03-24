@@ -9,9 +9,9 @@ class ContactDetails extends Component {
           <h2>Contact Details</h2>
           <p>simple text</p>
           <ul>
-            <li>Email: </li>
-            <li>Tell: </li>
-            <li>Address: </li>
+            <li>Email: something</li>
+            <li>Tell: 01287463453435</li>
+            <li>Address: something </li>
           </ul>
         </div>
         <div className="content-details">
