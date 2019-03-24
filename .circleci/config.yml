@@ -36,13 +36,14 @@ jobs:
       - PROJECT_NAME: "dev-mohsen"
       - GOOGLE_PROJECT_ID: "dev-mohsen"
       - GOOGLE_COMPUTE_ZONE: "europe-west1-b"
-      - GOOGLE_CLUSTER_NAME: "mohsen"
-      - run:
-          name: Set env variables
-          command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV      
+      - GOOGLE_CLUSTER_NAME: "mohsen"     
     working_directory: ~/repo
     steps:
       - checkout
+      - run:
+          name: Set env variables
+          command: 
+            echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV      
       - run: 
           name: Setup Google Cloud SDK
           command: |
