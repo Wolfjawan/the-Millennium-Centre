@@ -37,6 +37,9 @@ jobs:
       - GOOGLE_PROJECT_ID: "dev-mohsen"
       - GOOGLE_COMPUTE_ZONE: "europe-west1-b"
       - GOOGLE_CLUSTER_NAME: "mohsen"
+      - run:
+          name: Set env variables
+          command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV      
     working_directory: ~/repo
     steps:
       - checkout
@@ -50,16 +53,6 @@ jobs:
             gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
             gcloud --quiet container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
       - setup_remote_docker
-      # - run: 
-      #     name: Docker build and push
-      #     command: |
-      #       docker build \
-      #         --build-arg COMMIT_REF=${CIRCLE_SHA1} \
-      #         --build-arg BUILD_DATE=`date -u +”%Y-%m-%dT%H:%M:%SZ”` \
-      #         -t ${PROJECT_NAME} .
-      #       docker tag ${PROJECT_NAME} eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
-      #       gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
-      #       docker push eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
       - run: 
           name: Deploy to Kubernetes
           command:
