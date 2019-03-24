@@ -23,7 +23,7 @@ class Home extends Component {
               src={ArrowDown}
               className="arrow-down"
               alt="Arrow Down"
-              style={{ backgroundColor: "#f45d01" }}
+              style={{ backgroundColor: "#ffc221" }}
             />
           </a>
         </div>
