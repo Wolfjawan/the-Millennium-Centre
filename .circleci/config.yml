@@ -9,7 +9,7 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Install dependencies for lint and test
+          name: Install dependencies
           command: yarn
       - run:
           name: Set env variables
@@ -29,17 +29,43 @@ jobs:
       - run:
           name: Docker push the-millennium-centre
           command: docker push wolfjawan/the-millennium-centre
-  # deploy_production:
-  #   docker:
-  #     - image: circleci/python:2.7-jessie
-  #   working_directory: ~/repo
-  #   steps:
-  #     - setup_remote_docker
-  #     - run:
-  #         name: Set env variables
-  #         command: echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV
-  #   kubectl set image deployment/the-millennium-centre the-millennium-centre=wolfjawan/the-millennium-centre:$VERSION
-     
+  deploy_production:
+    docker:
+      - image: google/cloud-sdk
+    environment:
+      - PROJECT_NAME: "$PROJECT_NAME"
+      - GOOGLE_PROJECT_ID: "$GOOGLE_PROJECT_ID"
+      - GOOGLE_COMPUTE_ZONE: "europe-west1-b"
+      - GOOGLE_CLUSTER_NAME: "mohsen"
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: 
+          name: Setup Google Cloud SDK
+          command: |
+            apt-get install -qq -y gettext
+            echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
+            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json
+            gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
+            gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+            gcloud --quiet container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
+      - setup_remote_docker
+      - run: 
+          name: Docker build and push
+          command: |
+            docker build \
+              --build-arg COMMIT_REF=${CIRCLE_SHA1} \
+              --build-arg BUILD_DATE=`date -u +”%Y-%m-%dT%H:%M:%SZ”` \
+              -t ${PROJECT_NAME} .
+            docker tag ${PROJECT_NAME} eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+            gcloud auth print-access-token | docker login -u oauth2accesstoken --password-stdin https://eu.gcr.io
+            docker push eu.gcr.io/${GOOGLE_PROJECT_ID}/${PROJECT_NAME}:${CIRCLE_SHA1}
+      - run: 
+          name: Deploy to Kubernetes
+          command: |
+            envsubst < ${HOME}/project/k8s.yml > ${HOME}/patched_k8s.yml
+            kubectl apply -f ${HOME}/patched_k8s.yml
+            kubectl set image deployment/the-millennium-centre the-millennium-centre=docker.io/wolfjawan/the-millennium-centre:$VERSION
 workflows:
   version: 2
   build_and_test:
@@ -49,12 +75,12 @@ workflows:
             branches:
               only:    
                 - master
-      # - deploy_production:
-      #     context: deployments
-      #     requires:
-      #       - build_test
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
+      - deploy_production:
+          context: deployments
+          requires:
+            - build_test
+          filters:
+            branches:
+              only:
+                - master
 
