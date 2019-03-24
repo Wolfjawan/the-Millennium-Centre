@@ -10,7 +10,7 @@ class ContactDetails extends Component {
           <p>simple text</p>
           <ul>
             <li>Email: teresa.byrne@bdc.ac.uk</li>
-            <li>Tell: 01287463453435</li>
+            <li>Tell: 07402120069</li>
             <li>
               Address:{" "}
               <a
