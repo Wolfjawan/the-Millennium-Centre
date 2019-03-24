@@ -7,7 +7,7 @@ class Index extends Component {
       <div style={style}>
         <span
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${image})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`,
             position: "absolute",
             width: "100%",
             height: "650px",
