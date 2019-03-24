@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 class Header extends Component {
   render() {
     return (
@@ -30,16 +31,19 @@ class Header extends Component {
               </div>
               <div className="home-main-text-box">
                 <h3 className="bold">Location</h3>
-                <div>
+                <div className="mb-3">
                   <a
                     target="_blanc"
                     href="https://www.google.com/maps/place/Dagenham,+Romford+RM7+0SS/@51.5536496,0.1765393,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a52893f3c2c7:0x68b5f85c5e917a1f!8m2!3d51.5536496!4d0.178728"
-                    style={{ color: "#fff" }}
+                    style={{ color: "#b3b2b0" }}
                   >
                     The Millennium Centre, The Chase, Dagenham Road, Rush Green,
                     Romford RM7 0SS.
                   </a>
                 </div>
+                <Link to="about" className="read-more">
+                  Read more
+                </Link>
               </div>
             </div>
           </div>

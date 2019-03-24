@@ -4,7 +4,7 @@ import MillenniumCentre from "../images/Logo.png";
 class navbar extends Component {
   render() {
     return (
-      <div>
+      <div className="w-100">
         <nav id="navbar">
           <div className="navbar navbar-expand-lg navbar-light">
             <img

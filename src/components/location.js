@@ -7,7 +7,7 @@ class Location extends Component {
                 <img className="about-location-img" src={MillinniumCafe} alt="location" />
                 <span >
                     <div className="about-address">
-                        <h6>The Chase, Dagenham, Romford RM7 0SS</h6>
+                        <span>The Chase, Dagenham, Romford RM7 0SS: open on maps</span>
                     </div>
                 </span>
             </a>

@@ -7,9 +7,7 @@ const DefaultLayout = ({ component: Component, ...rest }) => (
     render={props => {
       return (
         <div>
-          <div className="main">
-            <Component {...props} />
-          </div>
+          <Component {...props} />
           <Footer />
         </div>
       );
