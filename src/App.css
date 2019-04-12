@@ -8,11 +8,7 @@ body {
   margin-bottom: 0px;
   font-size: 16px;
   min-height: 100%;
-  background: linear-gradient(
-    to left,
-    rgba(152, 189, 51, 0.801) 0,
-    rgba(51, 110, 172, 0.801) 100%
-  );
+  background: #eeeaea;
 }
 .main-container {
   position: relative;
@@ -22,8 +18,14 @@ body {
   margin-bottom: 100px;
 }
 .main {
-  /* max-width: 1400px; */
   width: 100%;
+  max-width: 1400px;
+}
+.modal {
+  justify-content: center;
+}
+.modal-dialog {
+  margin: 0 !important;
 }
 .read-more {
   color: #ffc321 !important;
@@ -51,28 +53,11 @@ body {
 /*
 screens folder
 */
-.home-main-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-.home-main-section-item {
-  width: 100%;
-}
-.millennium-cafe-section1 {
-  width: 100%;
-  margin-top: 1%;
-}
 .home-arrow-down {
   width: 100%;
   align-items: center;
   text-align: center;
   color: white;
-}
-.home-section-two {
-  display: flex;
-  justify-content: space-around;
-  border-radius: 5px;
-  margin: 1%;
 }
 .header-text {
   position: relative;
@@ -83,7 +68,7 @@ screens folder
   margin: 1%;
   padding: 1%;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   max-height: fit-content;
 }
 .google-maps {
@@ -91,7 +76,7 @@ screens folder
   width: 40%;
   margin: 1%;
   height: 350px !important;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 /*
@@ -191,7 +176,7 @@ component > home folder
   padding: 1%;
   background-color: #b3b2b1;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   color: #000000;
   max-height: fit-content;
 }
@@ -202,7 +187,7 @@ component > home folder
   padding: 1%;
   background-color: #b3b2b1;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   color: #1b1b1b;
   max-height: fit-content;
   right: 60px;
@@ -255,9 +240,9 @@ component > home folder
   margin: 1%;
   padding: 0.5% 0;
   margin-bottom: 0 !important;
-  background-color: #0a7031;
+  background-color: #78b94c;
   border-radius: 0% 20px;
-  box-shadow: 0px 0px 25px 2px #474647;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .dog-friendly {
   color: #181818;
@@ -266,9 +251,9 @@ component > home folder
   margin: 1%;
   padding: 1%;
   margin-bottom: 0 !important;
-  background-color: #ce9e19;
+  background-color: #78b94c;
   border-radius: 0% 20px;
-  box-shadow: 0px 0px 25px 2px #474647;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .dog-friendly-text {
   background-color: #b3b2b1;
@@ -277,7 +262,7 @@ component > home folder
   width: 50%;
   padding: 1%;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   color: #1b1b1b;
   max-height: fit-content;
   right: 150px;
@@ -301,8 +286,8 @@ component > theMillenniumCafe folder
   width: 100%;
 }
 .millennium-cafe-s1-text-h1 {
-  background-color: rgb(16, 30, 90);
-  color: #fff;
+  background-color: #78b94c;
+  color: rgb(29, 28, 28);
   font-size: 55px;
   width: 60%;
   padding: 0.5% 2% 0.5% 0;
@@ -310,14 +295,18 @@ component > theMillenniumCafe folder
   margin-top: 5%;
   font-weight: bold;
   border-radius: 0% 25px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.575);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .millennium-cafe-s1-text-p {
   background-color: #fff;
+  color: #78b94c;
   width: 45%;
   font-size: 25px;
   padding: 0 1%;
   margin: 0 0 0 15%;
   border-radius: 0% 25px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .what-we-do {
   width: 100%;
@@ -325,10 +314,11 @@ component > theMillenniumCafe folder
 .what-we-do-h1 {
   width: 40%;
   text-align: center;
-  background-color: rgb(16, 30, 90);
-  color: aliceblue;
+  background-color: #78b94c;
+  color: rgb(24, 23, 23);
   margin: 0.5% 30%;
   border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .what-we-do-p {
   margin: 0.5% 20%;
@@ -340,13 +330,14 @@ component > theMillenniumCafe folder
   margin: 0 10%;
 }
 .what-we-do-services-item {
-  background-color: rgb(51, 51, 75);
+  background-color: #78b94c;
   margin: 1%;
   width: 30%;
   text-align: center;
   padding: 3%;
-  color: #fff;
+  color: rgb(24, 23, 23);
   border-radius: 0% 35px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .what-we-do-services-image {
   width: 40%;
@@ -364,15 +355,16 @@ component > theMillenniumCafe folder
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  background-color: rgb(16, 30, 90);
+  background-color: #78b94c;
   margin: 1% 1%;
   width: 100%;
-  color: aliceblue;
+  color: rgb(24, 23, 23);
   border-radius: 5px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .menu-table {
   margin: 1% 1%;
-  border-radius: 0% 15px !important;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .menu-th {
   width: 33%;
@@ -393,14 +385,15 @@ component > theMillenniumCafe folder
   width: 100%;
   margin: 10px;
   border-image-slice: 1;
+  background-color: #78b94c;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .cafe-image-box {
   width: 45%;
   margin: 2%;
   border-image-slice: 1;
-}
-.modal-dialog {
-  max-width: 80% !important;
+  background-color: #78b94c;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 /*
 component > about us folder
@@ -432,30 +425,41 @@ component > about us folder
   border-radius: 5px;
   height: 80%;
 }
-
+.form-control {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
 .content-form-container {
   width: 40%;
-  background-color: #ffffff;
+  background-color: #d6d6d6;
   margin: 0 2%;
   padding: 2%;
   border-radius: 5px;
   max-height: fit-content;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 .contact-submit-btn {
+  background-color: #78b94c;
   width: 100%;
   border-radius: 5px;
+  color: #111111;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+.contact-submit-btn:hover {
+  background-color: #6aa543;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.55);
 }
 .content-details-container {
   width: 40%;
   margin: 0 2%;
 }
 .content-details {
-  background-color: #ffffff;
+  background-color: #78b94c;
   margin: 2%;
   margin-top: 0%;
   padding: 2%;
   border-radius: 5px;
   max-height: fit-content;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
 /* 
 students page
@@ -484,7 +488,7 @@ students page
 }
 .image-slider-image:hover {
   width: 96%;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 /* 
 component craft
@@ -499,14 +503,14 @@ component craft
   width: 22%;
   margin-top: 1%;
   padding: 5px;
-  background-color: #0a7031;
+  background-color: #78b94c;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px 0px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .craft-image:hover {
   width: 23%;
   transition: 0.5s;
-  box-shadow: 0.5px 0.5px 3.5px rgb(0, 0, 0), 0.5px 0.5px 3.5px rgb(0, 0, 0);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 990px) {
   .to-right {
@@ -516,27 +520,9 @@ component craft
   /*
   screens folder
   */
-  .home-main-section-item {
-    width: 98%;
-    margin: 1% 1% 0% 1%;
-  }
   .header-text {
     width: 96%;
     margin: 2%;
-  }
-  .home-section-two {
-    display: block;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
-    background-color: #85b40500;
-    margin: 0 1%;
-  }
-  .google-maps {
-    width: 100%;
-    margin: 0%;
-    height: 350px !important;
-    padding: 2%;
-    border-radius: 0;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0);
   }
   /*
   Component folder
@@ -559,8 +545,8 @@ component craft
   .nav-btn {
     border: 1px solid;
     border-radius: 5px;
-    color: white !important;
-    background-color: rgba(45, 125, 210, 0.959);
+    color: rgb(0, 0, 0) !important;
+    background-color: #78b94c;
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -639,7 +625,7 @@ component craft
     padding: 0;
     background-color: #47464700;
     border-radius: 0%;
-    box-shadow: 0px 0px 25px 2px #47464700;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
   }
   .dog-friendly-text {
     position: relative;
@@ -701,9 +687,6 @@ component craft
   .cafe-image-box {
     width: 100%;
     padding: 0;
-  }
-  .modal-dialog {
-    max-width: 100% !important;
   }
   /*
   component > about us folder

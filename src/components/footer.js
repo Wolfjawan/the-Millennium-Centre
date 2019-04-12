@@ -24,27 +24,37 @@ class Footer extends Component {
             <div className="footer-links">
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <Link to="/">Home</Link>
+                  <Link style={{ color: "#306B46" }} to="/">
+                    Home
+                  </Link>
                 </h6>
               </div>
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <Link to="/students">Our Students</Link>
+                  <Link style={{ color: "#306B46" }} to="/students">
+                    Our Students
+                  </Link>
                 </h6>
               </div>
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <Link to="/crafts">Crafts</Link>
+                  <Link style={{ color: "#306B46" }} to="/crafts">
+                    Crafts
+                  </Link>
                 </h6>
               </div>
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <Link to="/the-millennium-cafe">The Millennium Cafe</Link>
+                  <Link style={{ color: "#306B46" }} to="/the-millennium-cafe">
+                    The Millennium Cafe
+                  </Link>
                 </h6>
               </div>
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
-                  <Link to="/about">About Us</Link>
+                  <Link style={{ color: "#306B46" }} to="/about">
+                    About Us
+                  </Link>
                 </h6>
               </div>
             </div>
@@ -53,20 +63,42 @@ class Footer extends Component {
                 The Millennium Centre © 2019. All rights reserved.
               </p>
               <a href="/" className="fb-ic">
-                <i className="fa fa-facebook-f fa-lg white-text mr-4"> </i>
+                <i
+                  style={{ color: "#306B46" }}
+                  className="fa fa-facebook-f fa-lg white-text mr-4"
+                >
+                  {" "}
+                </i>
               </a>
               <a href="/" className="tw-ic">
-                <i className="fa fa-twitter fa-lg white-text mr-4"> </i>
+                <i
+                  style={{ color: "#306B46" }}
+                  className="fa fa-twitter fa-lg white-text mr-4"
+                >
+                  {" "}
+                </i>
               </a>
               <a href="/" className="ins-ic">
-                <i className="fa fa-instagram fa-lg white-text mr-4"> </i>
+                <i
+                  style={{ color: "#306B46" }}
+                  className="fa fa-instagram fa-lg white-text mr-4"
+                >
+                  {" "}
+                </i>
               </a>
               <a href="/" className="pin-ic">
-                <i className="fa fa-pinterest fa-lg white-text"> </i>
+                <i
+                  style={{ color: "#306B46" }}
+                  className="fa fa-pinterest fa-lg white-text"
+                >
+                  {" "}
+                </i>
               </a>
             </div>
           </div>
-          <img className="footer-bdc-logo" src={BDCLogo} alt="BDC logo" />
+          <span className="footer-bdc-logo">
+            <img src={BDCLogo} alt="BDC logo" />
+          </span>
         </div>
       </footer>
     );

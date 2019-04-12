@@ -33,7 +33,11 @@ class Students extends Component {
           Header={Header}
           style={{ height: "650px" }}
         />
-        <Slider images={images} />
+        <div className="main-container">
+          <div className="main">
+            <Slider images={images} />
+          </div>
+        </div>
       </div>
     );
   }

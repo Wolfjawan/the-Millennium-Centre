@@ -13,7 +13,11 @@ class Crafts extends Component {
           Header={Header}
           style={{ height: "660px" }}
         />
-        <CraftImages />
+        <div className="main-container">
+          <div className="main">
+            <CraftImages />
+          </div>
+        </div>
       </div>
     );
   }

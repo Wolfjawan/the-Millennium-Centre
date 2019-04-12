@@ -3,7 +3,6 @@ import Cakes from "../../images/General/12.JPG";
 import ToastedCheeseAndHam from "../../images/General/17.JPG";
 import SettingChairs from "../../images/General/19.JPG";
 import InsideView from "../../images/General/7.JPG";
-import Servant from "../../images/General/10.JPG";
 import FullScreenImage from "../fullScreenImage";
 
 class CafeImages extends Component {
@@ -35,10 +34,6 @@ class CafeImages extends Component {
         <div className="cafe-image-box">
           <FullScreenImage id="InsideView" image={InsideView} alt="Inside View" />
           <h4 className="p-2">Inside View</h4>
-        </div>
-        <div className="cafe-image-box">
-          <FullScreenImage id="Servant" image={Servant} alt="Servant" />
-          <h4 className="p-2">No Text yet...</h4>
         </div>
       </div>
     );
