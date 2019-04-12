@@ -26,6 +26,13 @@ const images = [
     text: ""
   },
   {
+    id: "lj3oj4oj",
+    name: "Christmas sticker",
+    image: craft7,
+    price: "£5",
+    text: ""
+  },
+  {
     id: "nkj3h4rhiwe",
     name: "Sweet Treats",
     image: craft3,
