@@ -1,5 +1,6 @@
-import * as dotenv from 'dotenv';
+import * as dotenv from "dotenv";
 import express from "express";
+import cors from "cors";
 import mailer from "./mailer";
 import compression from "compression";
 import bodyParser from "body-parser";
@@ -7,10 +8,11 @@ import bodyParser from "body-parser";
 dotenv.config();
 function startAPI() {
   const app = express()
+    .use(cors())
     .use(bodyParser.urlencoded({ limit: "50mb", extended: true }))
     .use(bodyParser.json({ type: "*/*", limit: "50mb" }))
     .use(compression());
-  app.post("/", async (req, res) => {
+  app.post("/email", async (req, res) => {
     const { fullName, email, number, message, subject } = req.body;
     const html = `
       <div>
@@ -34,7 +36,7 @@ function startAPI() {
   const server = app.listen(3001 || config.port, () =>
     console.log(`Listening on http://localhost:${server.address().port}`)
   );
-  console.log(process.env.APP_EMAIL_PASSWORD)
+  console.log(process.env.APP_EMAIL_PASSWORD);
   return app;
 }
 startAPI();
