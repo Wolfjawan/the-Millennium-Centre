@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import mailer from '../mailer';
+import axios from "axios";
 class ContactForm extends Component {
   state = {
     fullName: "",
@@ -13,29 +13,37 @@ class ContactForm extends Component {
       [e.target.name]: e.target.value
     });
   };
-  handelSubmit = event => {
+  handelSubmit = async event => {
     event.preventDefault();
-    // const { fullName, email, number, message, subject } = this.state;
-    // const emailData = { fullName, email, number, message, subject }
-    // mailer(emailData)
+    const { fullName, email, number, message, subject } = this.state;
+    const emailData = { fullName, email, number, message, subject };
+    try {
+      const sendEmail = await axios.post(`/`, emailData);
+      console.log(sendEmail);
+    } catch (err) {
+      console.log(err.message)
+      return {
+        err: "Something went wrong, please try again later."
+      };
+    }
   };
   render() {
     const { fullName, email, number, message, subject } = this.state;
     return (
       <div className="content-form-container">
         <h1>Contact us</h1>
-        <form>
+        <form onSubmit={this.handelSubmit} method="post">
           <div className="form-group">
-            <label htmlFor="fullName" onClick={this.handelSubmit}>
-              Full name
-            </label>
+            <label htmlFor="fullName">Full name</label>
             <input
               type="text"
               className="form-control"
               placeholder="Full name"
               value={fullName}
               name="fullName"
+              id="hearAbout"
               onChange={this.onChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -47,6 +55,7 @@ class ContactForm extends Component {
               name="email"
               value={email}
               onChange={this.onChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -58,6 +67,7 @@ class ContactForm extends Component {
               name="number"
               value={number}
               onChange={this.onChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -69,6 +79,7 @@ class ContactForm extends Component {
               name="subject"
               value={subject}
               onChange={this.onChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -80,6 +91,7 @@ class ContactForm extends Component {
               name="message"
               value={message}
               onChange={this.onChange}
+              required
             />
           </div>
           <button className="btn contact-submit-btn" type="submit">

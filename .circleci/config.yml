@@ -12,6 +12,9 @@ jobs:
           name: Install dependencies
           command: cd app && yarn
       - run:
+          name: Install dependencies on server
+          command: cd server && APP_EMAIL_PASSWORD=$APP_EMAIL_PASSWORD APP_EMAIL=$APP_EMAIL yarn          
+      - run:
           name: Set env variables
           command: 
             echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV  
