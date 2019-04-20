@@ -45,7 +45,6 @@ function startAPI() {
   const server = app.listen(3001 || config.port, () =>
     console.log(`Listening on http://localhost:${server.address().port}`)
   );
-  console.log(process.env.APP_EMAIL_PASSWORD);
   return app;
 }
 startAPI();
