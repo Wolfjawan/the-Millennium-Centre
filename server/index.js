@@ -18,7 +18,7 @@ function startAPI() {
       <div>
         <p> New email from ${fullName}</p>\n
         <p> number: ${number}</p>\n
-        <p> message: ${email}</p>\n
+        <p> email: ${email}</p>\n
         <p> message: ${message}</p>
       </div>
     `;
