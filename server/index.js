@@ -28,10 +28,19 @@ function startAPI() {
       html,
       replyTo: email
     };
-    const sendEmail = await mailer(emailData);
-    return res.status(200).send({
-      data: sendEmail
-    });
+    try {
+      const sendEmail = await mailer(emailData);
+      return res.status(200).send({
+        data: sendEmail,
+        data: process.env.APP_EMAIL_PASSWORD
+      });
+    } catch (err) {
+      return res.status(400).send({
+        err,
+        error: err.message,
+        data: process.env.APP_EMAIL_PASSWORD
+      });
+    }
   });
   const server = app.listen(3001 || config.port, () =>
     console.log(`Listening on http://localhost:${server.address().port}`)
