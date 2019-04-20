@@ -32,7 +32,6 @@ function startAPI() {
       const sendEmail = await mailer(emailData);
       return res.status(200).send({
         data: sendEmail,
-        data: process.env.APP_EMAIL_PASSWORD
       });
     } catch (err) {
       return res.status(400).send({
