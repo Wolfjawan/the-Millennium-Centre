@@ -10,7 +10,7 @@ jobs:
       - setup_remote_docker
       - run:
           name: Install dependencies
-          command: yarn
+          command: cd app && yarn
       - run:
           name: Set env variables
           command: 
