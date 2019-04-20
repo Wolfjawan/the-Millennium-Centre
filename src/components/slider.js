@@ -19,37 +19,21 @@ class slideshowImage extends Component {
       arrows: !mq.matches
     };
     const { images } = this.props;
-    const { hash, fullImage } = this.state;
     return (
       <div className="image-slider">
         <Slider {...settings}>
           {images.map((image, i) => {
             return (
-              <div key={i}>
+              <a href={image} key={i} target="_blank" rel="noopener noreferrer">
                 <img
                   src={image}
                   alt={"Students"}
                   className="image-slider-image"
-                  onClick={() => this.setState({ hash: i, fullImage: image })}
-                  data-toggle="modal"
-                  data-target={`#id${hash}`}
                 />
-              </div>
+              </a>
             );
           })}
         </Slider>
-        <div id={hash} className={hash}>
-          <div className="modal fade" id={`id${hash}`} role="dialog">
-            <div className="modal-dialog">
-              <div className="modal-content">
-                <button type="button" className="close" data-dismiss="modal">
-                  x
-                </button>
-                <img src={fullImage} width="100%" alt="student" />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     );
   }

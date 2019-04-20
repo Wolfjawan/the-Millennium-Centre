@@ -3,20 +3,20 @@ import Cakes from "../../images/General/12.JPG";
 import ToastedCheeseAndHam from "../../images/General/17.JPG";
 import SettingChairs from "../../images/General/19.JPG";
 import InsideView from "../../images/General/7.JPG";
-import FullScreenImage from "../fullScreenImage";
+import ImageComponent from "../ImageComponent";
 
 class CafeImages extends Component {
   render() {
     return (
       <div className="cafe-images">
         <div className="cafe-image-box-cake">
-          <FullScreenImage id="Cakes" image={Cakes} alt="Cakes" />
+          <ImageComponent id="Cakes" image={Cakes} alt="Cakes" />
           <h4 className="p-2">
             Genoa Cake, Angel layer cake and Lemon iced Madeira cake
           </h4>
         </div>
         <div className="cafe-image-box">
-          <FullScreenImage
+          <ImageComponent
             id="SettingChairs"
             image={SettingChairs}
             alt="SettingChairs"
@@ -24,7 +24,7 @@ class CafeImages extends Component {
           <h4 className="p-2">Inside view of The Millennium Cafe</h4>
         </div>
         <div className="cafe-image-box">
-          <FullScreenImage
+          <ImageComponent
             id="ToastedCheeseAndHam"
             image={ToastedCheeseAndHam}
             alt="Toasted Cheese AndHam"
@@ -32,7 +32,7 @@ class CafeImages extends Component {
           <h4 className="p-2">Toasted Cheese And Ham</h4>
         </div>
         <div className="cafe-image-box">
-          <FullScreenImage id="InsideView" image={InsideView} alt="Inside View" />
+          <ImageComponent id="InsideView" image={InsideView} alt="Inside View" />
           <h4 className="p-2">Inside View</h4>
         </div>
       </div>

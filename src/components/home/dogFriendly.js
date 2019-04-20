@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import DogFriendly from "../../images/General/28.JPG";
-import FullScreenImage from "../fullScreenImage";
+import ImageComponent from "../ImageComponent";
 
 class dogFriendly extends Component {
   render() {
     return (
       <div className="dog-friendly" id="dog-friendly">
-        <FullScreenImage
+        <ImageComponent
           id="DogFriendly"
           image={DogFriendly}
           alt="Dog Friendly"

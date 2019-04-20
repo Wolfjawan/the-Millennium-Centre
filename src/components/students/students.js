@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FullScreenImage from "../fullScreenImage";
+import ImageComponent from "../ImageComponent";
 import Slider from "../slider";
 class Students extends Component {
   render() {
@@ -10,7 +10,7 @@ class Students extends Component {
         {/* {images.map((image, i) => {
           return (
             <div className="students-image" key={i}>
-              <FullScreenImage
+              <ImageComponent
                 id={`Students${i}`}
                 image={image}
                 alt={`Students${i}`}

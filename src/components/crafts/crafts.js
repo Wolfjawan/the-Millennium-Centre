@@ -7,9 +7,7 @@ import craft4 from "../../images/Craft/4.JPG";
 import craft5 from "../../images/Craft/5.JPG";
 import craft6 from "../../images/Craft/6.JPG";
 import craft7 from "../../images/Craft/7.JPG";
-// import craft8 from "../../images/Craft/8.JPG";
-// import craft9 from "../../images/Craft/9.jpeg";
-import FullScreenImage from "../fullScreenImage";
+import ImageComponent from "../ImageComponent";
 const images = [
   {
     id: "98765",
@@ -67,21 +65,8 @@ const images = [
     price: "£5",
     text: ""
   }
-  //   {
-  //     id:"",
-  //     name:"",
-  //     image: craft8,
-  // price: "£5",
-  // text: "",
-  //   },
-  //   {
-  //     id:"",
-  //     name: "",
-  //     image: craft9,
-  // price: "£5",//
-  // text: ""
-  //   }
 ];
+
 class Crafts extends Component {
   render() {
     return (
@@ -89,7 +74,7 @@ class Crafts extends Component {
         {images.map((image, i) => {
           return (
             <div className="craft-image" key={i}>
-              <FullScreenImage
+              <ImageComponent
                 id={image.id}
                 image={image.image}
                 alt={image.name}

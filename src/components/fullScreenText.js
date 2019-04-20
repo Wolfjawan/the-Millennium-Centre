@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-class FullScreenImage extends Component {
+class FullScreenText extends Component {
   state = {
     IsImage: ""
   };
@@ -36,4 +36,4 @@ class FullScreenImage extends Component {
   }
 }
 
-export default FullScreenImage;
+export default FullScreenText;

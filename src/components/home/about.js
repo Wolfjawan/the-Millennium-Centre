@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FullScreenImage from "../fullScreenImage";
+import ImageComponent from "../ImageComponent";
 import FullScreenText from "../fullScreenText";
 import TheMillenniumCentre from "../../images/General/20.JPG";
 import TheMillenniumCentreWildlifeImage from "../../images/General/29.jpg";
@@ -47,7 +47,7 @@ class About extends Component {
     return (
       <div className="home-about" id="home-about">
         <section>
-          <FullScreenImage
+          <ImageComponent
             id="TheMillenniumCentre"
             image={TheMillenniumCentre}
             alt="TheMillenniumCentre"
@@ -79,7 +79,7 @@ class About extends Component {
           </div>
         </section>
         <section className="about-section-two-main">
-          <FullScreenImage
+          <ImageComponent
             id="TheMillenniumCentreWildlifeImage"
             image={TheMillenniumCentreWildlifeImage}
             alt="TheMillenniumCentreWildlifeImage"
