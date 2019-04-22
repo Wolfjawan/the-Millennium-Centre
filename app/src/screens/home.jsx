@@ -17,13 +17,14 @@ class Home extends Component {
         <div className="main-container">
           <div className="main">
             <div className="home-arrow-down">
-            <a href="#home-about">
+              <a href="#home-about">
                 <i
                   className="fa fa-angle-double-down"
                   style={{
+                    position: "absolute",
                     fontSize: "80px",
                     fontWidth: "bold",
-                    color: "red",
+                    color: "#78b94c",
                     textAlign: "center"
                   }}
                 />

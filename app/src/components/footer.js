@@ -13,7 +13,7 @@ class Footer extends Component {
               style={{
                 fontSize: "80px",
                 fontWidth: "bold",
-                color: "red",
+                color: "#78b94c",
                 textAlign: "center"
               }}
             />
