@@ -21,7 +21,6 @@ class Home extends Component {
                 <i
                   className="fa fa-angle-double-down"
                   style={{
-                    position: "absolute",
                     fontSize: "80px",
                     fontWidth: "bold",
                     color: "#78b94c",
