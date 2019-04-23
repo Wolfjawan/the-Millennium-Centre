@@ -14,8 +14,12 @@ class TheMillenniumCafe extends Component {
           Header={Header}
           style={{ height: "650px" }}
         />
-        <WhatWeDo />
-        <Menu />
+        <div className="main-container">
+          <div className="main">
+            <WhatWeDo />
+            <Menu />
+          </div>
+        </div>
       </div>
     );
   }

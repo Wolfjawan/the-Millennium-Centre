@@ -448,16 +448,18 @@ component > about us folder
 }
 .content-details-container {
   width: 40%;
-  margin: 0 2%;
 }
 .content-details {
   background-color: #78b94c;
-  margin: 2%;
-  margin-top: 0%;
+  margin-bottom: 2%;
   padding: 2%;
   border-radius: 5px;
   max-height: fit-content;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
+}
+.main-contact-us{
+  display: flex;
+  justify-content: space-around
 }
 /* 
 students page
@@ -714,6 +716,10 @@ component craft
   }
   .content-details-container {
     width: 96%;
+    margin: 2%;
+  }
+  .main-contact-us{
+    display: block;
   }
   /* 
 students page

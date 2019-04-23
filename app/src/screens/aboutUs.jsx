@@ -13,9 +13,11 @@ class AboutUs extends Component {
           Header={Header}
           style={{ height: "730px" }}
         />
-        <div className="about-us-section">
-        <ContactDetails />
-        <ContentForm />
+        <div className="main-container">
+          <div className="main main-contact-us ">
+            <ContactDetails />
+            <ContentForm />
+          </div>
         </div>
       </div>
     );
