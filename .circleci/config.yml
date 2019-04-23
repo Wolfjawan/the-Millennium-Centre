@@ -17,7 +17,7 @@ jobs:
             echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV  
       - run:
           name: build production
-          command: yarn build
+          command: cd app && yarn build
       - run:
           name: Docker build the-millennium-centre
           command: |
