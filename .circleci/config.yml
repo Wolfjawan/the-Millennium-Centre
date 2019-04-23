@@ -1,19 +1,16 @@
 ---
 version: 2
 jobs:
-  build_test:
+  build_app:
     docker:
       - image: circleci/node:8.12.0
-    working_directory: ~/the-Millennium-Centre
+    working_directory: ~/the-Millennium-Centre/app
     steps:
       - checkout
       - setup_remote_docker
       - run:
           name: Install dependencies
-          command: cd app && yarn
-      - run:
-          name: Install dependencies on server
-          command: cd server && APP_EMAIL_PASSWORD=$APP_EMAIL_PASSWORD APP_EMAIL=$APP_EMAIL yarn          
+          command: cd app && yarn     
       - run:
           name: Set env variables
           command: 
@@ -32,6 +29,31 @@ jobs:
       - run:
           name: Docker push the-millennium-centre
           command: docker push wolfjawan/the-millennium-centre
+  build_server:
+    docker:
+      - image: circleci/node:8.12.0
+    working_directory: ~/the-Millennium-Centre/server
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Install dependencies
+          command: cd server && yarn       
+      - run:
+          name: Set env variables
+          command: 
+            echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV 
+      - run:
+          name: Docker build the-millennium-centre-api
+          command: |
+            docker build -t wolfjawan/the-millennium-centre-api:$VERSION --build-arg version=$VERSION .
+            docker tag wolfjawan/the-millennium-centre-api:$VERSION wolfjawan/the-millennium-centre-api:latest
+      - run:
+          name: Docker login
+          command: echo "$DOCKER_PASS" | docker login -u $DOCKER_USER --password-stdin
+      - run:
+          name: Docker push the-millennium-centre-api
+          command: docker push wolfjawan/the-millennium-centre-api          
   deploy_production:
     docker:
       - image: google/cloud-sdk
@@ -61,18 +83,24 @@ jobs:
           name: Deploy to Kubernetes
           command:
             kubectl set image deployment/the-millennium-centre the-millennium-centre=docker.io/wolfjawan/the-millennium-centre:$VERSION
+            kubectl set image deployment/the-millennium-centre-api the-millennium-centre-api=docker.io/wolfjawan/the-millennium-centre-api:$VERSION
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - build_test:
+      - build_app:
           filters:
             branches:
               only:    
                 - master
+      - build_server:
+          filters:
+            branches:
+              only:    
+                - master                
       - deploy_production:
           requires:
-            - build_test
+            - build_app
           filters:
             branches:
               only:
