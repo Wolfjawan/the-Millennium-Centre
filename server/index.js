@@ -7,14 +7,15 @@ import bodyParser from "body-parser";
 
 dotenv.config();
 function startAPI() {
-  const app = express()
-    .use(cors())
-    .use(bodyParser.urlencoded({ limit: "50mb", extended: true }))
-    .use(bodyParser.json({ type: "*/*", limit: "50mb" }))
-    .use(compression());
-  app.post("/email", async (req, res) => {
-    const { fullName, email, number, message, subject } = req.body;
-    const html = `
+  try {
+    const app = express()
+      .use(cors())
+      .use(bodyParser.urlencoded({ limit: "50mb", extended: true }))
+      .use(bodyParser.json({ type: "*/*", limit: "50mb" }))
+      .use(compression());
+    app.post("/email", async (req, res) => {
+      const { fullName, email, number, message, subject } = req.body;
+      const html = `
       <div>
         <p> New email from ${fullName}</p>\n
         <p> number: ${number}</p>\n
@@ -22,36 +23,45 @@ function startAPI() {
         <p> ${message}</p>
       </div>
     `;
-    const emailData = {
-      email,
-      subject,
-      html,
-      replyTo: email
-    };
-    try {
-      const sendEmail = await mailer(emailData);
-      return res.status(200).send({
-        data: sendEmail
-      });
-    } catch (err) {
-      return res.status(400).send({
-        err,
-        error: err.message,
-      });
-    }
-  });
-  app.get("*", (req, res) => {
-    return res.status(400).send(`
+      const emailData = {
+        email,
+        subject,
+        html,
+        replyTo: email
+      };
+      try {
+        const sendEmail = await mailer(emailData);
+        return res.status(200).send({
+          data: sendEmail
+        });
+      } catch (err) {
+        return res.status(400).send({
+          err,
+          error: err.message
+        });
+      }
+    });
+    app.get("*", (req, res) => {
+      return res.status(400).send(`
     <div style="padding: 5%">
       <h1 style="font-size: 80px">
        <span style="color:red;">404</span> not found 🤷‍♂️
       </h1>
     </div>
   `);
-  });
-  const server = app.listen(3001 || config.port, () =>
-    console.log(`Listening on http://localhost:${server.address().port}`)
-  );
-  return app;
+    });
+    const server = app.listen(3001 || config.port, () =>
+      console.log(`Listening on http://localhost:${server.address().port}`)
+    );
+    return app;
+  } catch (err) {
+    return res.status(500).send(`
+    <div style="padding: 5%">
+      <h1 style="font-size: 80px">
+       Bad request
+      </h1>
+    </div>
+  `);
+  }
 }
 startAPI();
