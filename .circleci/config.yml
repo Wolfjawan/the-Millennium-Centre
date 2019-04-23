@@ -4,7 +4,7 @@ jobs:
   build_app:
     docker:
       - image: circleci/node:8.12.0
-    working_directory: ~/the-Millennium-Centre/app
+    working_directory: ~/the-Millennium-Centre
     steps:
       - checkout
       - setup_remote_docker
@@ -17,7 +17,7 @@ jobs:
             echo 'export VERSION=$(echo $CIRCLE_SHA1 | cut -c -7)' >> $BASH_ENV  
       - run:
           name: build production
-          command: cd app && yarn build   
+          command: yarn build
       - run:
           name: Docker build the-millennium-centre
           command: |
@@ -32,7 +32,7 @@ jobs:
   build_server:
     docker:
       - image: circleci/node:8.12.0
-    working_directory: ~/the-Millennium-Centre/server
+    working_directory: ~/the-Millennium-Centre
     steps:
       - checkout
       - setup_remote_docker
@@ -101,6 +101,7 @@ workflows:
       - deploy_production:
           requires:
             - build_app
+            - build_server
           filters:
             branches:
               only:
