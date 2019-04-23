@@ -19,18 +19,28 @@ class ContactForm extends Component {
     const emailData = { fullName, email, number, message, subject };
     try {
       const sendEmail = await axios.post(`35.195.185.220/email`, emailData);
-      console.log(sendEmail);
+      if (sendEmail.status === 200) {
+        this.setState({
+          msg: "Thanks for your message.",
+          fullName: "",
+          email: "",
+          number: "",
+          message: "",
+          subject: ""
+        });
+      }
     } catch (err) {
-      console.log(err.message)
       return {
         err: "Something went wrong, please try again later."
       };
     }
   };
   render() {
-    const { fullName, email, number, message, subject } = this.state;
+    const { fullName, email, number, message, subject, err, msg } = this.state;
     return (
       <div className="content-form-container">
+        {err && <p>{err} </p>}
+        {msg && <p>{msg} </p>}
         <h1>Contact us</h1>
         <form onSubmit={this.handelSubmit} method="post">
           <div className="form-group">
