@@ -80,10 +80,13 @@ jobs:
             gcloud --quiet container clusters get-credentials ${GOOGLE_CLUSTER_NAME}
       - setup_remote_docker
       - run: 
-          name: Deploy to Kubernetes
+          name: Deploy app
           command:
             kubectl set image deployment/the-millennium-centre the-millennium-centre=docker.io/wolfjawan/the-millennium-centre:$VERSION
-            kubectl set image deployment/the-millennium-centre-api the-millennium-centre-api=docker.io/wolfjawan/the-millennium-centre-api:$VERSION
+      - run: 
+          name: Deploy server
+          command:
+            kubectl set image deployment/the-millennium-centre-api the-millennium-centre-api=docker.io/wolfjawan/the-millennium-centre-api:$VERSION            
 workflows:
   version: 2
   build_and_test:
