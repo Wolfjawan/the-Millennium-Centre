@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    run: the-millennium-centre
+  name: the-millennium-centre
+  namespace: default
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 30475
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    run: the-millennium-centre
+  sessionAffinity: None
+  type: LoadBalancer

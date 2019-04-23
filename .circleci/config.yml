@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Docker build the-millennium-centre
           command: |
-            docker build -t wolfjawan/the-millennium-centre:$VERSION --build-arg version=$VERSION .
+            docker build -t wolfjawan/the-millennium-centre:$VERSION --build-arg version=$VERSION ./app
             docker tag wolfjawan/the-millennium-centre:$VERSION wolfjawan/the-millennium-centre:latest
       - run:
           name: Docker login
@@ -46,7 +46,7 @@ jobs:
       - run:
           name: Docker build the-millennium-centre-api
           command: |
-            docker build -t wolfjawan/the-millennium-centre-api:$VERSION --build-arg version=$VERSION .
+            docker build -t wolfjawan/the-millennium-centre-api:$VERSION --build-arg version=$VERSION ./server
             docker tag wolfjawan/the-millennium-centre-api:$VERSION wolfjawan/the-millennium-centre-api:latest
       - run:
           name: Docker login

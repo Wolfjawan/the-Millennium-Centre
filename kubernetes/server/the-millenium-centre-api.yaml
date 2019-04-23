@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: the-millennium-centre-api
+  name: the-millennium-centre-api
+  namespace: default
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: the-millennium-centre-api
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        run: the-millennium-centre-api
+    spec:
+      containers:
+        - image: docker.io/wolfjawan/the-millennium-centre-api
+          imagePullPolicy: IfNotPresent
+          name: the-millennium-centre-api
+          ports:
+            - containerPort: 3001
+              protocol: TCP
+          resources: {}
+          env:
+            - name: EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: email
+                  key: value
+            - name: EMAIL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: email-password
+                  key: value
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
