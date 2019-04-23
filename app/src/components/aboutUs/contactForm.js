@@ -18,7 +18,7 @@ class ContactForm extends Component {
     const { fullName, email, number, message, subject } = this.state;
     const emailData = { fullName, email, number, message, subject };
     try {
-      const sendEmail = await axios.post(`35.195.185.220/email`, emailData);
+      const sendEmail = await axios.post(`http://35.195.185.220/email`, emailData);
       if (sendEmail.status === 200) {
         this.setState({
           msg: "Thanks for your message.",
