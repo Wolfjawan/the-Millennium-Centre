@@ -19,7 +19,7 @@ function startAPI() {
         <p> New email from ${fullName}</p>\n
         <p> number: ${number}</p>\n
         <p> email: ${email}</p>\n
-        <p> message: ${message}</p>
+        <p> ${message}</p>
       </div>
     `;
     const emailData = {
@@ -31,7 +31,7 @@ function startAPI() {
     try {
       const sendEmail = await mailer(emailData);
       return res.status(200).send({
-        data: sendEmail,
+        data: sendEmail
       });
     } catch (err) {
       return res.status(400).send({
@@ -40,6 +40,15 @@ function startAPI() {
         data: process.env.APP_EMAIL_PASSWORD
       });
     }
+  });
+  app.get("*", (req, res) => {
+    return res.status(400).send(`
+    <div style="padding: 5%">
+      <h1 style="font-size: 80px">
+       <span style="color:red;">404</span> not found 🤷‍♂️
+      </h1>
+    </div>
+  `);
   });
   const server = app.listen(3001 || config.port, () =>
     console.log(`Listening on http://localhost:${server.address().port}`)
