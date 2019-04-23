@@ -39,8 +39,8 @@ class ContactForm extends Component {
     const { fullName, email, number, message, subject, err, msg } = this.state;
     return (
       <div className="content-form-container">
-        {err && <p>{err} </p>}
-        {msg && <p>{msg} </p>}
+        {err && <p style={{color:"red"}}>{err} </p>}
+        {msg && <p style={{color:"green"}}>{msg} </p>}
         <h1>Contact us</h1>
         <form onSubmit={this.handelSubmit} method="post">
           <div className="form-group">

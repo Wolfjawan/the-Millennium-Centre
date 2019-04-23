@@ -37,7 +37,6 @@ function startAPI() {
       return res.status(400).send({
         err,
         error: err.message,
-        data: process.env.APP_EMAIL_PASSWORD
       });
     }
   });
