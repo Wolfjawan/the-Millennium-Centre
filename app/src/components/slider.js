@@ -11,11 +11,11 @@ class slideshowImage extends Component {
     var settings = {
       dots: true,
       infinite: true,
-      speed: 2000,
+      speed: 4000,
       slidesToShow: mq.matches ? 1 : 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 4000,
       arrows: !mq.matches
     };
     const { images } = this.props;

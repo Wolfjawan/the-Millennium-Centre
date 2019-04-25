@@ -21,11 +21,23 @@ body {
   width: 100%;
   max-width: 1400px;
 }
-.modal {
-  justify-content: center;
-}
 .modal-dialog {
-  margin: 0 !important;
+  max-width: 80% !important;
+}
+.slick-next:before,
+.slick-prev:before {
+  font-size: 40px !important;
+  color: #78b94c !important;
+}
+.slick-next {
+  right: -30px !important;
+}
+.slick-prev {
+  left: -45px !important;
+}
+.slick-dots li button:before {
+  font-size: 30px !important;
+  color: #78b94c !important;
 }
 .read-more {
   color: #ffc321 !important;
@@ -457,9 +469,9 @@ component > about us folder
   max-height: fit-content;
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.493);
 }
-.main-contact-us{
+.main-contact-us {
   display: flex;
-  justify-content: space-around
+  justify-content: space-around;
 }
 /* 
 students page
@@ -718,7 +730,7 @@ component craft
     width: 96%;
     margin: 2%;
   }
-  .main-contact-us{
+  .main-contact-us {
     display: block;
   }
   /* 

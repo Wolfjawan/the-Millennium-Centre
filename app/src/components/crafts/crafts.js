@@ -11,58 +11,58 @@ import ImageComponent from "../ImageComponent";
 const images = [
   {
     id: "98765",
-    name: "Bird feeder",
+    name: "Bug boxes",
     image: craft1,
-    price: "£5",
+    price: "£10",
     text: ""
   },
   {
     id: "oiu9876",
-    name: "Bird house",
+    name: "Bird boxes",
     image: craft2,
-    price: "£5",
+    price: "£10",
     text: ""
   },
   {
     id: "lj3oj4oj",
-    name: "Christmas sticker",
+    name: "Hand made cards",
     image: craft7,
-    price: "£5",
+    price: "50p",
     text: ""
   },
   {
     id: "nkj3h4rhiwe",
     name: "Sweet Treats",
     image: craft3,
-    price: "£5",
+    price: "50p",
     text: ""
   },
   {
     id: "ljn2jk3h4j",
-    name: "Bird food",
+    name: "Bird treats",
     image: craft4,
-    price: "£5",
+    price: "50p",
     text: ""
   },
   {
     id: "lkh434hui",
-    name: "Dog food",
+    name: "Dog treats",
     image: craft5,
-    price: "£5",
+    price: "£1",
     text: ""
   },
   {
     id: "jo3j4oij",
-    name: "Butterfly sticker",
+    name: "Hand made cards",
     image: craft6,
-    price: "£5",
+    price: "50p",
     text: ""
   },
   {
     id: "lj3oj4oj",
-    name: "Christmas sticker",
+    name: "Hand made cards",
     image: craft7,
-    price: "£5",
+    price: "50p",
     text: ""
   }
 ];
