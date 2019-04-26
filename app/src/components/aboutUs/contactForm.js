@@ -21,7 +21,7 @@ class ContactForm extends Component {
       const sendEmail = await axios.post(`https://millenniumcentre-api.wolfjawan.com/email`, emailData);
       if (sendEmail.status === 200) {
         this.setState({
-          msg: "Thanks for your message.",
+          msg: "Thanks for your enquiry.",
           fullName: "",
           email: "",
           number: "",
