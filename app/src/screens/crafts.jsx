@@ -15,6 +15,8 @@ class Crafts extends Component {
         />
         <div className="main-container">
           <div className="main">
+            <h1 className="mt-4 text-center">STUDENTS CRAFTS</h1>
+            <hr />
             <CraftImages />
           </div>
         </div>

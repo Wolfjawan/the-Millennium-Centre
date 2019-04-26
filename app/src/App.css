@@ -10,6 +10,18 @@ body {
   min-height: 100%;
   background: #eeeaea;
 }
+p,
+ul,
+li {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 20px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family:  Tahoma, Geneva, sans-serif;
+}
 .main-container {
   position: relative;
   height: 100%;
@@ -73,12 +85,12 @@ screens folder
 }
 .header-text {
   background-color: #78b94ce3;
-  color: rgb(29, 28, 28);
+  color: rgb(0, 0, 0);
   width: 60%;
   padding: 1%;
   margin-top: 5%;
   border-radius: 0% 25px;
-  text-shadow: 0.5px 0.5px 1px rgba(160, 160, 160, 0.705);
+  /* text-shadow: 0.5px 0.5px 1px rgba(160, 160, 160, 0.705); */
   box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .google-maps {
@@ -587,6 +599,9 @@ component craft
   .home-main-text {
     margin: 1%;
     width: 98%;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
   }
   .home-main-text-box {
     border-radius: 10px;

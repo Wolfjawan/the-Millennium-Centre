@@ -35,6 +35,8 @@ class Students extends Component {
         />
         <div className="main-container">
           <div className="main">
+            <h1 className="mt-4 text-center">STUDENTS GALLERY</h1>
+            <hr/>
             <Slider images={images} />
           </div>
         </div>

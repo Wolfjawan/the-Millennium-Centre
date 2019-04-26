@@ -46,7 +46,7 @@ class Footer extends Component {
               <div className="col-md-2 mb-3">
                 <h6 className="text-uppercase font-weight-bold">
                   <Link style={{ color: "#306B46" }} to="/the-millennium-cafe">
-                    The Millennium Cafe
+                    Millennium Cafe
                   </Link>
                 </h6>
               </div>
@@ -59,10 +59,10 @@ class Footer extends Component {
               </div>
             </div>
             <div className="footer-icons row">
-              <p className="white-text mr-4">
+              <h5 className="white-text mr-4">
                 The Millennium Centre © 2019. All rights reserved.
-              </p>
-              <a href="/" className="fb-ic">
+              </h5>
+              <a href="http://facebook.com" className="fb-ic">
                 <i
                   style={{ color: "#306B46" }}
                   className="fa fa-facebook-f fa-lg white-text mr-4"
@@ -70,7 +70,7 @@ class Footer extends Component {
                   {" "}
                 </i>
               </a>
-              <a href="/" className="tw-ic">
+              <a href="http://twitter.com" className="tw-ic">
                 <i
                   style={{ color: "#306B46" }}
                   className="fa fa-twitter fa-lg white-text mr-4"
@@ -78,7 +78,7 @@ class Footer extends Component {
                   {" "}
                 </i>
               </a>
-              <a href="/" className="ins-ic">
+              <a href="http://instagram.com" className="ins-ic">
                 <i
                   style={{ color: "#306B46" }}
                   className="fa fa-instagram fa-lg white-text mr-4"
@@ -86,7 +86,7 @@ class Footer extends Component {
                   {" "}
                 </i>
               </a>
-              <a href="/" className="pin-ic">
+              <a href="http://pinterest.com" className="pin-ic">
                 <i
                   style={{ color: "#306B46" }}
                   className="fa fa-pinterest fa-lg white-text"

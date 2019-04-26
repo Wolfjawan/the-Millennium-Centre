@@ -8,11 +8,11 @@ class navbar extends Component {
         <nav id="navbar">
           <div className="navbar navbar-expand-lg navbar-light">
             <img
-            className="navbar-brand"
-            src={MillenniumCentre}
-            alt="Millennium Centre"
-            height="150px"
-          />
+              className="navbar-brand"
+              src={MillenniumCentre}
+              alt="Millennium Centre"
+              height="150px"
+            />
             <span
               className="navbar-toggler bt nav-btn-menu mr-4 float-right"
               type="span"
@@ -36,7 +36,7 @@ class navbar extends Component {
                   Crafts
                 </Link>
                 <Link className="nav-btn m-1" to="/the-millennium-cafe">
-                  The Millennium Cafe
+                  Millennium Cafe
                 </Link>
                 <Link className="nav-btn m-1" to="/about">
                   About Us

@@ -7,7 +7,7 @@ class WhatWeDo extends Component {
     return (
       <div>
         <h1 className="what-we-do-h1">WHAT WE DO</h1>
-        <h5 className="text-center">9:00am - 3:00pm Weekdays</h5>
+        <h5 className="text-center"><u>9:00am - 3:00pm Weekdays</u></h5>
         <p className="what-we-do-p">
           The Millennium Center Building, run by special needs students from
           Barking and Dagenham College who are completing their hospitality and

@@ -10,12 +10,12 @@ class About extends Component {
         <h3>Birds</h3>
         <p>
           Skylarks are becoming rare, probably because of the chemicals used by
-          farmers. Eastbrookend and The Chase are chemical free zones which means
-          visitors have plenty of opportunity to listen out for the music of the
-          skylarks. During the summer months the scrubland provides valuable
-          feeding and nesting habitat for small birds such as the blackcap.
-          Eastbrookend has also proved to be a good breeding ground for
-          lapwings. The winter berries that adorn most bushes attract hungry
+          farmers. Eastbrookend and The Chase are chemical free zones which
+          means visitors have plenty of opportunity to listen out for the music
+          of the skylarks. During the summer months the scrubland provides
+          valuable feeding and nesting habitat for small birds such as the
+          blackcap. Eastbrookend has also proved to be a good breeding ground
+          for lapwings. The winter berries that adorn most bushes attract hungry
           birds such as fieldfares and redwings that fly all the way from the
           Arctic to feast at the Eastbrookend.Another bird on the lookout for
           food is the kestrel. Woodpeckers are regularly seen flying over the
@@ -60,7 +60,7 @@ class About extends Component {
               of ecological principles as well as housing educational displays
               in its public spaces.
             </p>
-            It includes:
+            <h4><strong>It includes:</strong></h4>
             <ul>
               <li>an introduction to the history of the site</li>
               <li>

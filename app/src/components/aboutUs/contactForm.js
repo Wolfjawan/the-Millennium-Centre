@@ -41,10 +41,10 @@ class ContactForm extends Component {
       <div className="content-form-container">
         {err && <p style={{color:"red"}}>{err} </p>}
         {msg && <p style={{color:"green"}}>{msg} </p>}
-        <h1>Contact us</h1>
+        <h1>Enquiry Form</h1>
         <form onSubmit={this.handelSubmit} method="post">
           <div className="form-group">
-            <label htmlFor="fullName">Full name</label>
+            <label htmlFor="fullName">Full Name</label>
             <input
               type="text"
               className="form-control"
@@ -57,7 +57,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               className="form-control"
@@ -69,7 +69,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="number">Number</label>
+            <label htmlFor="number">Telephone Number</label>
             <input
               type="text"
               className="form-control"
@@ -93,7 +93,7 @@ class ContactForm extends Component {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Description of enquiry</label>
             <textarea
               type="text"
               className="form-control"
