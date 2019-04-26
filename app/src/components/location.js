@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import MillinniumCafe from "../images/cafeLocation.png";
 class Location extends Component {
   render() {
     return (
@@ -8,6 +7,7 @@ class Location extends Component {
         width="100%"
         height="450"
         style={{ border: "0" }}
+        title="minimum centre"
       />
     );
   }
