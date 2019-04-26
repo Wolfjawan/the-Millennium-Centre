@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
-import MillinniumCafe from '../images/cafeLocation.png';
+import React, { Component } from "react";
+import MillinniumCafe from "../images/cafeLocation.png";
 class Location extends Component {
-    render() {
-        return (
-            <a target="_blanc" href="https://www.google.co.uk/maps/place/Eastbrookend+Country+Park+Millennium+Visitor+Centre/@51.5528668,0.1747286,17.68z/data=!4m5!3m4!1s0x0:0xfbd0965e9b74b82c!8m2!3d51.5527702!4d0.1760743?hl=en&authuser=0" >
-                <img className="about-location-img" src={MillinniumCafe} alt="location" />
-                <span >
-                    <div className="about-address">
-                        <span>The Chase, Dagenham, Romford RM7 0SS: open on maps</span>
-                    </div>
-                </span>
-            </a>
-        );
-    }
+  render() {
+    return (
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d866.4213308755735!2d0.17586654703440205!3d51.55277801699413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbd0965e9b74b82c!2sEastbrookend+Country+Park+Millennium+Visitor+Centre!5e0!3m2!1sen!2suk!4v1556279285775!5m2!1sen!2suk"
+        width="100%"
+        height="450"
+        style={{ border: "0" }}
+      />
+    );
+  }
 }
 
 export default Location;
