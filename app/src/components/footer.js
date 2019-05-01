@@ -97,7 +97,7 @@ class Footer extends Component {
             </div>
           </div>
           <span className="footer-bdc-logo">
-            <img src={BDCLogo} alt="BDC logo" />
+            <img src={BDCLogo} style={{border: "6px solid"}} alt="BDC logo" />
           </span>
         </div>
       </footer>
